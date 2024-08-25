@@ -1,0 +1,1357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: white;
+}
+body {
+  animation: fadeInAnimation ease 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.first-container {
+  width: 100%;
+  height: 70rem;
+  position: relative;
+  border: none;
+  background-image: url(images/Vector.png);
+  overflow: hidden;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  border: none;
+}
+.my-svg {
+  position: absolute;
+}
+.background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the SVG covers the entire container */
+}
+.first-navbar {
+  position: relative;
+  height: 10rem;
+  width: 100%;
+  margin: auto;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 0px;
+  gap: 35vw;
+  background-color: transparent;
+  border: none;
+}
+.navbar-logo {
+  height: 100%;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+}
+.navbar-logo > .navbar-brand {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.navbar-buttons-home {
+  position: relative;
+  width: 30.625rem;
+  height: 6rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 4px rgba(234, 121, 40, 0.25);
+  border: 1px solid rgba(234, 121, 40, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  width: 100%;
+}
+.nav-item {
+  font-size: 19px;
+  color: #6d2e00;
+  font-family: "Nunito Sans", sans-serif;
+  opacity: 0.4;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+.links {
+  color: #6d2e00;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+  display: inline-block;
+  width: 6rem;
+  padding: 0.5rem 0;
+}
+.current-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 3.2rem;
+  border-radius: 100px;
+  background-color: rgba(234, 121, 40,0.25);
+  opacity: 1;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.current-page > a {
+  color: #6d2e00;
+}
+.navbar-hamburger {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  height: 4vw;
+  justify-content: center; /* Centers the list within the navbar-buttons-home div */
+  align-items: center; /* Centers items vertically within the div */
+  border: none;
+  border-radius: 15px; /* Optional: For visualization */
+  position: relative;
+  background-color: #ffffff;
+  right: 0;
+  display: none;
+}
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+}
+.hamburger > button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.side-navbar {
+  position: fixed;
+  top: 0;
+  right: -50vw; /* Start off-screen to the right */
+  width: 50vw;
+  height: 100vh;
+  background-color: rgb(250, 244, 239);
+  z-index: 1000;
+  box-shadow: 0px 0px 20px 4px rgba(255, 241, 230, 1);
+  transition: right 0.3s ease-in; /* Smooth transition */
+}
+
+.side-navbar.active {
+  right: 0; /* Moves the sidebar into view */
+}
+
+.side-navbar-heading-div {
+  width: 100%;
+  height: 10vh;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+.side-navbar-heading {
+  color: #6d2e00;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+.side-navbar-links {
+  width: 100%;
+  height: 30vh;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.side-navbar-para {
+  border: none;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.side-navbar-para > p {
+  font-size: 14px;
+  color: #6d2e00;
+}
+.sidebar {
+  color: #6d2e00;
+  margin-left: 18px;
+}
+
+.first-sub-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  top: 0px;
+  height: 44vh;
+  border: none;
+}
+.sub-first-div {
+  position: absolute;
+}
+.lovely {
+  color: #ea7928;
+  font-size: 7rem;
+  font-family: "Fenix", serif;
+  padding-top: 0.714rem;
+  padding-right: 1.286rem;
+}
+.sub-second-div {
+  position: relative;
+}
+.simple {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #6d2e00;
+  font-size: 2rem;
+  font-weight: 550;
+  font-family: "Nunito Sans", sans-serif;
+  padding-left: 400px;
+  word-spacing: 15px;
+}
+.buttons {
+  width: 100%;
+  height: 8vh;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.first-button,
+.second-button {
+  border-radius: 6px;
+  height: 2.75rem;
+  width: 8.25rem;
+}
+.first-button {
+  background-color: #ea7928;
+  color: white;
+  border: none;
+}
+.second-button {
+  border: 1px solid #ea7928;
+  background-color: #fffcfa;
+  color: #ea7928;
+}
+.second-button > a {
+  text-decoration: none;
+  color: #ea7928;
+  font-weight: 500;
+}
+.first-button > a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+.special-brands {
+  position: relative;
+  top: 9.75rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2vw;
+}
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.brands-heading-div {
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brands-heading {
+  margin-bottom: 0rem;
+  margin-left: 1.625rem;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+  color: #6d2e00;
+}
+.brand-image-1,
+.brand-image-2,
+.brand-image-3,
+.brand-image-4,
+.brand-image-5 {
+  border: none;
+  width: 8rem;
+}
+.brand-images {
+  max-width: 100%; /* Ensure images fit within their grid cells */
+  max-height: 100%; /* Maintain aspect ratio and prevent overflow */
+  object-fit: contain; /* Adjust image to fit within the container */
+}
+.special-form {
+  display: block;
+  height: 50.5rem;
+  width: 82rem;
+  margin: auto;
+}
+.form {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #f8d4e8;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 4px rgba(255, 241, 230, 1);
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.actual-form {
+  height: 95%;
+  border: none;
+  width: 100%;
+  padding-left: 6rem;
+}
+.filling-form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading-form > h1 {
+  font-family: "Fenix", serif;
+  font-size: 2.875rem;
+}
+.filling-form > .heading-form {
+  width: 100%;
+  display: flex;
+}
+.input-fields {
+  border: none;
+  width: 100%;
+  height: 50vh;
+}
+.contact-name {
+  width: 100%;
+  height: 5rem;
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+  font-weight: 600;
+  padding-left: 0.625rem;
+  color: #8e8e8e;
+}
+.multiple-inputs {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+.city {
+  width: 90%;
+  border: none;
+  padding-left: 0.625rem;
+  height: 5rem;
+  border-bottom: 1px solid #8e8e8e;
+}
+.postcode {
+  width: 100%;
+  border: none;
+  padding-left: 0.625rem;
+  height: 5rem;
+  border-bottom: 1px solid #8e8e8e;
+}
+.form-submit-button {
+  display: flex;
+  width: 100%;
+  height: 12vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vw;
+}
+.form-submit-button > button {
+  background-color: #dd4f04;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 8vh;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+}
+.touch {
+  background-color: transparent;
+  color: #6d2e00;
+}
+.heading-form > h1 {
+  word-spacing: 0px;
+}
+.city,
+.postcode {
+  font-weight: 600;
+}
+.form-image {
+  padding-left: 4rem;
+}
+.first-form-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 4.5rem;
+  width: 24rem;
+  margin: auto;
+}
+.first-form-image > img {
+  width: 100%;
+}
+.first-form-para {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  top: 6.3rem;
+  width: 34.4rem;
+  border: none;
+}
+.first-form-para > p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.special-footer {
+  position: relative;
+  display: inline-block;
+  height: 40rem;
+  width: 100%;
+}
+.footer {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: relative;
+  display: flex;
+}
+.footer-image {
+  height: 40rem;
+  width: 25rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-of-footer {
+  width: 12.375rem;
+  height: 12.375rem;
+  border: none;
+  background-image: url(images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -1.25rem;
+  cursor: pointer;
+}
+.simple-save-lovely {
+  height: 40rem;
+  width: 25rem;
+  border: none;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  position: relative;
+}
+.footer-first-para {
+  width: 14.375rem;
+  height: 2.375rem;
+  border: none;
+  display: block;
+  position: relative;
+  top: 17rem;
+}
+.footer-first-para > p {
+  font-size: 24px;
+  color: #0a142f;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+}
+.footer-first-info {
+  position: relative;
+  top: 7rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  width: 20.375rem;
+  height: 4.375rem;
+}
+.footer-first-info-first-div {
+  width: 35%;
+  border-bottom: 1px solid #0081fe;
+}
+.footer-first-info-second-div > div > p > a {
+  font-size: 15px;
+  color: #0a142f;
+  font-family: "Nunito Sans", sans-serif;
+}
+.footer-first-info-second-div-inside-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  border-bottom: 1px #0a142f;
+  height: 2vh;
+}
+.footer-first-info-first-div > p {
+  margin-bottom: 0px;
+}
+.footer-first-info-second-div > div > p {
+  margin-bottom: 0px;
+}
+.footer-first-info-second-div {
+  width: 12.9rem;
+  height: 1.6rem;
+  border-bottom: 1px solid #0081fe;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-third-div {
+  height: 40rem;
+  width: 30rem;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.footer-first-third-div {
+  width: 100%;
+  height: 120%;
+  position: relative;
+  border: none;
+}
+.footer-second-third-div {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  border: none;
+  top: 58px;
+}
+.footer-last-third-div {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  border: none;
+  top: 58px;
+  display: none;
+}
+.footer-first-third-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 50%;
+}
+.footer-sub-first,
+.footer-sub-second {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: relative;
+  padding-top: 35vh;
+}
+.footer-sub-first > p {
+  margin-bottom: 15px;
+}
+.footer-sub-second > p {
+  margin-bottom: 9px;
+}
+p {
+  margin-bottom: 0px;
+}
+.footer-second-last-button {
+  height: 100%;
+  width: 10%;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  display: none;
+}
+.footer-last-button {
+  height: 40rem;
+  width: 20rem;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-second-button {
+  border: none;
+  height: 10vh;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -50px;
+}
+.footer-button {
+  border: none;
+  height: 10vh;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -30px;
+}
+.arrow-second-last-button {
+  border: none;
+  border-radius: 50%; /* Adjust if you want a circular button */
+  background-color: #dd4f04;
+  width: 50px; /* Adjust the button width to ensure it fits the image */
+  height: 50px; /* Adjust the button height to ensure it fits the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
+}
+.arrow-button {
+  border: none;
+  border-radius: 50%; /* Adjust if you want a circular button */
+  background-color: #dd4f04;
+  width: 50px; /* Adjust the button width to ensure it fits the image */
+  height: 50px; /* Adjust the button height to ensure it fits the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative; /* Allows precise control over the image positioning */
+}
+
+.arrow-button img {
+  width: 17px;
+  height: 20px;
+  object-fit: contain; /* Ensures the image fits without distortion */
+  position: absolute; /* Ensures the image is centered precisely */
+}
+a {
+  text-decoration: none;
+  color: #0a142f;
+}
+
+/* page-2 */
+.card-main-container {
+  height: 60rem;
+  width: 100%;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/Vector-product-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-container {
+  display: flex;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  gap: 40px; /* Space between cards */
+  padding: 0px;
+  margin-left: 91px; /* Padding around the container */
+  scroll-snap-type: x mandatory; /* Optional: for snap scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  z-index: 1;
+  position: relative;
+  top: 60px;
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto; /* Prevent the cards from shrinking */
+  width: 485px; /* Width of each card */
+  height: 462px; /* Height of each card */
+  background-color: white; /* Card background color */
+  border: 3px solid #fff5ee; /* Card border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+  padding-right: 20px; /* Padding inside the card */
+  padding-left: 20px; /* Padding inside the card */
+  scroll-snap-align: start; /* Optional: aligns cards with snap scrolling */
+  z-index: 2;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+.card-1-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  border: none;
+}
+.card-1-sub-div-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  width: 118px;
+  height: 118px;
+}
+.courses-category {
+  margin-left: 26px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.courses-category .card:nth-child(1),
+.courses-category .card:nth-child(2) {
+  border: 1px solid rgba(234, 121, 40, 0.25);
+  width: 635px;
+}
+
+.courses-category .card-1-div {
+  height: 50%;
+}
+
+.courses-category .card-1-sub-div-1 {
+  width: 252px;
+  height: 140px;
+}
+
+.products-category {
+  margin-left: 91px; /* default margin */
+  display: flex;
+  flex-wrap: wrap; /* default display */
+}
+
+.products-category .card {
+  border: 1px solid rgba(234, 121, 40, 0.25); /* default border */
+  width: auto; /* default width */
+}
+
+.products-category .card-1-div {
+  height: auto; /* default height */
+}
+
+.products-category .card-1-sub-div-1 {
+  width: auto; /* default width */
+  height: auto; /* default height */
+}
+
+.others-category .form {
+  border: 1px solid #FFBFF1;
+  box-shadow: 0px 0px 20px 4px rgba(255, 0, 199, 0.12);
+}
+/* CSS for Courses category */
+.courses-card-container {
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.courses-card {
+  border: 1px solid rgba(234, 121, 40, 0.25);
+  width: 635px;
+}
+
+.courses-card .card-1-div {
+  height: 50%;
+}
+
+.courses-card .card-1-sub-div-1 {
+  width: 252px;
+  height: 140px;
+}
+
+/* CSS for showing only two cards and hiding the third card */
+.hide-third-card .card:nth-child(3) {
+  display: none;
+}
+
+/* .card-2-sub-div-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/sld.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  width: 118px;
+  height: 118px;
+}
+.card-3-sub-div-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/fbe.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  width: 118px;
+  height: 118px;
+} */
+.paragraph-container {
+  max-height: 13em; /* Initially show only the first part of the paragraph */
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  padding-bottom: 40px; /* Ensure there's space for the button */
+  position: relative;
+}
+.paragraph-container.expanded {
+  max-height: 30em;
+  overflow-y: auto;
+}
+.read-more-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #46172f;
+  background: none;
+  border: none;
+  z-index: 3;
+  position: absolute;
+  bottom: 10px; /* Position the button at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: color 0.3s ease; /* Optional: smooth transition for color */
+}
+.paragraph-container.expanded::after {
+  content: ""; /* Remove the ellipsis when expanded */
+}
+.card-1-sub-div-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-1-button-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  height: 47px;
+  width: 180px;
+  background-color: #fff5ee;
+  border: none;
+  gap: 10px;
+  font-size: 16px;
+  color: #6d2e00;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bolder;
+}
+.card-1-div-2 > p {
+  font-size: 14px;
+  color: #000000;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bolder;
+  line-height: 30px;
+}
+
+.read-more-btn {
+  margin-top: 25px;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  height: 47px;
+  width: 200px;
+  background-color: #fff5ee;
+  border: none;
+  gap: 10px;
+  font-size: 16px;
+  color: #6d2e00;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bolder;
+}
+
+.product-special-brand {
+  position: relative;
+  top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2vw;
+}
+.second-page-first-buttons-div {
+  width: 100%;
+  height: 10rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle {
+  position: relative;
+  width: 30.625rem;
+  height: 6rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 4px rgba(234, 121, 40, 0.25);
+  border: 1px solid rgba(234, 121, 40, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.courses-rectangle,.courses-navbar-buttons{
+  box-shadow: 0px 0px 20px 4px rgba(234, 40, 40,0.12);
+}
+.form-highlight {
+  border: 1px solid rgba(234, 121, 40, 0.25);
+  box-shadow: 0px 0px 20px 4px rgba(234, 40, 40,0.12) ;
+}
+.more-navbar ,.more-rectangle{
+  box-shadow: 0px 0px 20px 4px rgb(255, 0, 199 , 0.12);
+  border: 1px solid pink;
+}
+.more-form-highlight{
+  border: 1px solid #FFBFF1;
+  box-shadow: 0px 0px 20px 4px rgba(255, 0, 199 ,0.12) ;
+}
+.second-page-first-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  width: 100%;
+}
+
+.first-first-list,
+.first-second-list,
+.first-third-list {
+  font-size: 19px;
+  color: #6d2e00;
+  font-family: "Nunito Sans", sans-serif;
+  opacity: 0.4;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem; /* Adjust padding for consistent space */
+  width: 8rem; /* Set a fixed width to prevent movement */
+  text-align: center; /* Center the text within the fixed width */
+  box-sizing: border-box; /* Include padding and border in the element's size */
+}
+
+.second-page-current-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 3.2rem;
+  border-radius: 100px;
+  background-color: rgba(234, 121, 40,0.25);
+  opacity: 1;
+  padding: 0.5rem 1rem; /* Adjust padding */
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+/* For tablets (min-width: 600px) */
+@media (max-width: 1024px) {
+  .special-form {
+    width: 60rem;
+    height: 47.5rem;
+  }
+  .first-form-image {
+    width: 18rem;
+  }
+  .first-form-para {
+    width: 23rem;
+    height: 23rem;
+  }
+  .courses-card{
+    width: 480px;
+  }
+  .courses-card .card-1-sub-div-1 {
+    width: 225px;
+}
+}
+
+@media (max-width: 768px) {
+  .navbar-buttons-home {
+    display: none;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+  }
+  .first-container {
+    height: 52rem;
+  }
+  .first-sub-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .simple {
+    padding-left: 20px;
+    font-size: 1.5rem;
+  }
+  .lovely,
+  .sub-second-div {
+    font-size: 5rem;
+    padding-top: 8.714rem;
+    padding-left: 2.286rem;
+  }
+  .sub-second-div {
+    padding-top: 0;
+  }
+  .buttons {
+    flex-direction: column;
+    position: relative;
+    height: 20vh;
+    top: 12rem;
+  }
+  .special-brands {
+    top: 15rem;
+  }
+  .card-container {
+    margin-left: 2rem;
+    padding: 0 10px;
+  }
+  .courses-card{
+    width: 485px;
+  }
+  .courses-card .card-1-sub-div-1 {
+    width: 225px;
+}
+  .actual-form {
+    padding-left: 2rem;
+  }
+  .heading-form > h1 {
+    font-size: 1.875rem;
+  }
+  .special-form {
+    width: 90%;
+    height: 45.5rem;
+  }
+
+  .form-submit-button > button {
+    font-size: 1rem;
+  }
+  .first-form-image {
+    width: 11rem;
+    top: 3rem;
+  }
+  .first-form-para > p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .first-form-para {
+    width: 18rem;
+    height: 23rem;
+  }
+  .contact-name,
+  .city,
+  .postcode {
+    height: 4rem;
+  }
+  .footer-first-third-div {
+    height: 100%;
+  }
+  .footer-sub-first,
+  .footer-sub-second {
+    padding-top: 16.2rem;
+  }
+  .footer-last-button {
+    width: 7rem;
+  }
+  .side-navbar-links {
+    width: 100%;
+    height: 70vh;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .side-navbar-heading-div {
+    height: 16vh;
+  }
+  .side-navbar-heading {
+    font-size: 2rem;
+  }
+  .material-icons {
+    cursor: pointer;
+  }
+  .card-main-container {
+    height: 50rem;
+  }
+}
+
+/* For mobile devices (min-width: 360px) */
+@media (max-width: 480px) {
+  .navbar-buttons-home {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .side-navbar-heading {
+    font-size: 1rem;
+  }
+  .sidebar{
+    margin-left: 0;
+  }
+  .nav-2{
+    display: none;
+  }
+  .first-container {
+    height: 65rem;
+  }
+  .first-sub-container {
+    flex-direction: column;
+    height: 24rem;
+  }
+  .lovely,
+  .sub-second-div {
+    font-size: 5rem;
+    padding-top: 0.714rem;
+  }
+  .simple {
+    font-size: 1.25rem;
+    padding-left: 0;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 1.5vw;
+    top: 0;
+  }
+  .card{
+    width: 380px;
+  }
+  .courses-card .card-1-sub-div-1 {
+    width: 185px;
+    height: 115px;
+}
+.card-1-button-1 {
+  width: 130px;
+  font-size: 14px;
+}
+  .special-brands {
+    top: 0;
+  }
+  .rectangle{
+    width:24rem;
+  }
+  .card-container {
+    margin-left: 2rem;
+    padding: 0 10px;
+}
+.card-main-container{
+  height: 53rem;
+}
+  .second-page-current-page{
+    width: 7.5rem;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .special-form {
+    height: 70.5rem;
+  }
+  .actual-form {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .form-submit-button > button {
+    font-size: 1.2rem;
+  }
+  .form-image {
+    padding-left: 1rem;
+  }
+  .first-form-para > p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+  }
+  .first-form-para {
+    width: 18rem;
+    height: 23rem;
+    top: 0;
+    justify-content: center;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .footer-image {
+    display: none;
+  }
+  .simple-save-lovely {
+    height: 22rem;
+  }
+  .footer-first-para {
+    top: 8rem;
+    padding-left: 1rem;
+    width: 16.375rem;
+  }
+  .footer-first-info {
+    top: 0;
+    padding-left: 1rem;
+  }
+  .footer-sub-first {
+    padding-top: 0;
+    padding-left: 1rem;
+  }
+  .footer-sub-second {
+    padding-top: 0;
+    width: 10rem;
+  }
+  .footer-third-div {
+    height: 17rem;
+    width: 25rem;
+  }
+  .footer-last-button {
+    display: none;
+  }
+  .footer-second-third-div {
+    width: 100%;
+    height: 6vh;
+    top: 0;
+  }
+  .footer-second-last-button {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .footer-second-button {
+    top: 0;
+    height: 16vh;
+    width: 12vw;
+  }
+}
+
+/* @media (width <= 768px) {
+
+
+  :root {
+      --inline-padding: 2em;
+      .first-container {
+        width: 100%;
+        height: 50rem;
+        position: relative;
+        border: none;
+        background-image: url(images/Vector.png);
+        overflow: hidden;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+      
+        }
+        .lovely {
+          color: #ea7928;
+          font-size: 6em;
+          font-family: "Fenix", serif;
+          padding-top: 50px;
+          padding-right: .5em;
+          padding-left: .8rem;
+      }
+      .navbar-buttons-home{
+        width: 20em;
+        height: 3em;
+        margin-right: 1em;
+      }
+      .simple{
+        padding-left: 11em;
+      }
+      .buttons{
+        height: 6 em;
+      }
+}
+
+@media (width <= 425px) {
+  :root {
+      --title-size: 2rem;
+      --title-size-lg: 3rem;
+      --body-size: .8rem
+  }
+}
+
+@media (width <= 320px) {
+  :root {
+      --inline-padding: 1em;
+      --body-size: .7rem;
+      --body-size-sm: .7em
+  }
+}}  */
