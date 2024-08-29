@@ -78,7 +78,8 @@ class Specialbrand extends HTMLElement {
 }
 class Specialform extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `<div class="form">
+    this.innerHTML = `<form class="form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="532365eb-767a-41a5-9e39-f91173489f7d">
   <div class="filling-form" id="actual-form">
     <div class="actual-form"">
       <div class="heading-form">
@@ -167,7 +168,9 @@ class Specialform extends HTMLElement {
       </p>
     </div>
   </div>
-</div>
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+</form>
 `;
   }
 }
@@ -200,6 +203,9 @@ class Specialfooter extends HTMLElement {
         <p><a href="./index.html">Home</a></p>
         <p><a href="./products.html">Products</a></p>
         <p><a href="./more.html">More</a></p>
+        <p><a href="./legal.html">Privacy Policy</a></p>
+        <p><a href="./legal.html#terms">Terms of Service</a></p>
+
       </div>
       <div class="footer-sub-second">
         <p><a href="https://www.youtube.com/@lovelysolutionsllc">Youtube</a></p>
@@ -234,10 +240,451 @@ class Specialfooter extends HTMLElement {
 `;
   }
 }
+class SpecialApps extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <div class="card-main-container">
+      <div class="card-container">
+        <!-- starting of card - 1 of apps section -->
+        <div class="card card-1" id="card-1-image">
+          <div class="card-1-div">
+            <div class="card-1-sub-div-1"></div>
+            <div class="card-1-sub-div-2">
+              <button class="card-1-button-1">
+                Install Now
+                <img src="images/Download.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-1-div-2 paragraph-container">
+            <p>
+              Status Label Directory (SLD) is a powerful tool designed to
+              streamline standard operating procedure (SOP) documentation and
+              enhance workflow management within monday.com. Tailored for teams
+              seeking to optimize their processes and improve productivity, SLD
+              offers a centralized hub where users can organize, document, and
+              track SOPs associated with status labels in their monday.com
+              boards. Features and Benefits: Effortless Organization
+              :white_check_mark: - Easily list out labels of all status columns
+              in a board in a separate board view, providing a comprehensive
+              overview of workflow statuses and associated procedures.
+              Customizable Notes and Links :white_check_mark: - Add detailed
+              notes and links to each status label, enabling users to document
+              specific actions, instructions, or references related to
+              individual labels. Training and Onboarding Support
+              :white_check_mark: - Facilitate training and onboarding processes
+              by providing new team members with quick access to SOP
+              documentation directly within the monday.com platform. Increased
+              Efficiency :white_check_mark: - Save time and reduce errors by
+              standardizing SOP documentation and providing clear guidance on
+              workflow procedures, ensuring consistency and accuracy across
+              teams. Improved Collaboration :white_check_mark: - Foster
+              collaboration and knowledge sharing among team members by
+              centralizing SOP documentation and enabling collaborative editing
+              and feedback. Examples of Use Cases: A marketing team uses SLD to
+              document standard procedures for campaign status updates,
+              including specific tasks, timelines, and resource requirements. A
+              project management team utilizes SLD to outline SOPs for project
+              milestones, providing detailed instructions and links to relevant
+              project documents and resources. A human resources department
+              leverages SLD to enhance onboarding procedures for new employees.
+              Questions? Book a demo!
+            </p>
+          </div>
+          <button class="read-more-btn">
+            <span class="btn-text">Read More</span>
+          </button>
+        </div>
+        <!-- Ending of card - 1 of apps section -->
+        <!-- starting of card - 2 of apps section -->
+        <div class="card card-1" id="card-1-image">
+          <div class="card-1-div">
+            <div class="card-1-sub-div-1"></div>
+            <div class="card-1-sub-div-2">
+              <button class="card-1-button-1">
+                Install Now
+                <img src="images/Download.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-1-div-2 paragraph-container">
+            <p>
+              Status Label Directory (SLD) is a powerful tool designed to
+              streamline standard operating procedure (SOP) documentation and
+              enhance workflow management within monday.com. Tailored for teams
+              seeking to optimize their processes and improve productivity, SLD
+              offers a centralized hub where users can organize, document, and
+              track SOPs associated with status labels in their monday.com
+              boards. Features and Benefits: Effortless Organization
+              :white_check_mark: - Easily list out labels of all status columns
+              in a board in a separate board view, providing a comprehensive
+              overview of workflow statuses and associated procedures.
+              Customizable Notes and Links :white_check_mark: - Add detailed
+              notes and links to each status label, enabling users to document
+              specific actions, instructions, or references related to
+              individual labels. Training and Onboarding Support
+              :white_check_mark: - Facilitate training and onboarding processes
+              by providing new team members with quick access to SOP
+              documentation directly within the monday.com platform. Increased
+              Efficiency :white_check_mark: - Save time and reduce errors by
+              standardizing SOP documentation and providing clear guidance on
+              workflow procedures, ensuring consistency and accuracy across
+              teams. Improved Collaboration :white_check_mark: - Foster
+              collaboration and knowledge sharing among team members by
+              centralizing SOP documentation and enabling collaborative editing
+              and feedback. Examples of Use Cases: A marketing team uses SLD to
+              document standard procedures for campaign status updates,
+              including specific tasks, timelines, and resource requirements. A
+              project management team utilizes SLD to outline SOPs for project
+              milestones, providing detailed instructions and links to relevant
+              project documents and resources. A human resources department
+              leverages SLD to enhance onboarding procedures for new employees.
+              Questions? Book a demo!
+            </p>
+          </div>
+          <button class="read-more-btn">
+            <span class="btn-text">Read More</span>
+          </button>
+        </div>
+        <!-- Ending of card - 2 of apps section -->
+        <!-- starting of card - 3 of apps section -->
+        <div class="card card-2" id="card-2-image">
+          <div class="card-1-div">
+            <div class="card-1-sub-div-1"></div>
+            <div class="card-1-sub-div-2">
+              <button class="card-1-button-1">
+                Install Now
+                <img src="images/Download.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-1-div-2 paragraph-container">
+            <p>
+              Status Label Directory (SLD) is a powerful tool designed to
+              streamline standard operating procedure (SOP) documentation and
+              enhance workflow management within monday.com. Tailored for teams
+              seeking to optimize their processes and improve productivity, SLD
+              offers a centralized hub where users can organize, document, and
+              track SOPs associated with status labels in their monday.com
+              boards. Features and Benefits: Effortless Organization
+              :white_check_mark: - Easily list out labels of all status columns
+              in a board in a separate board view, providing a comprehensive
+              overview of workflow statuses and associated procedures.
+              Customizable Notes and Links :white_check_mark: - Add detailed
+              notes and links to each status label, enabling users to document
+              specific actions, instructions, or references related to
+              individual labels. Training and Onboarding Support
+              :white_check_mark: - Facilitate training and onboarding processes
+              by providing new team members with quick access to SOP
+              documentation directly within the monday.com platform. Increased
+              Efficiency :white_check_mark: - Save time and reduce errors by
+              standardizing SOP documentation and providing clear guidance on
+              workflow procedures, ensuring consistency and accuracy across
+              teams. Improved Collaboration :white_check_mark: - Foster
+              collaboration and knowledge sharing among team members by
+              centralizing SOP documentation and enabling collaborative editing
+              and feedback. Examples of Use Cases: A marketing team uses SLD to
+              document standard procedures for campaign status updates,
+              including specific tasks, timelines, and resource requirements. A
+              project management team utilizes SLD to outline SOPs for project
+              milestones, providing detailed instructions and links to relevant
+              project documents and resources. A human resources department
+              leverages SLD to enhance onboarding procedures for new employees.
+              Questions? Book a demo!
+            </p>
+          </div>
+          <button class="read-more-btn">
+            <span class="btn-text">Read More</span>
+          </button>
+        </div>
+        <!-- Ending of card - 3 of apps section -->
+      </div>
+    </div>
+
+`;
+  }
+}
+class SpecialCourses extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <div class="card-main-container-courses">
+      <div class="card-container-courses courses-card-container hide-third-card">
+        <!-- Card 1 -->
+        <div class="card card-1 courses-card" id="card-1-image">
+          <div class="card-1-div">
+            <div class="courses-1-sub-div-1">
+            </div>
+            <div class="card-1-sub-div-2">
+              <button class="card-1-button-1">
+                Install Now
+                <img src="images/Download.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-1-div-2 paragraph-container">
+            <p> Status Label Directory (SLD) is a powerful tool designed to
+              streamline standard operating procedure (SOP) documentation and
+              enhance workflow management within monday.com. Tailored for teams
+              seeking to optimize their processes and improve productivity, SLD
+              offers a centralized hub where users can organize, document, and
+              track SOPs associated with status labels in their monday.com
+              boards. Features and Benefits: Effortless Organization
+              :white_check_mark: - Easily list out labels of all status columns
+              in a board in a separate board view, providing a comprehensive
+              overview of workflow statuses and associated procedures.
+              Customizable Notes and Links :white_check_mark: - Add detailed
+              notes and links to each status label, enabling users to document
+              specific actions, instructions, or references related to
+              individual labels. Training and Onboarding Support
+              :white_check_mark: - Facilitate training and onboarding processes
+              by providing new team members with quick access to SOP
+              documentation directly within the monday.com platform. Increased
+              Efficiency :white_check_mark: - Save time and reduce errors by
+              standardizing SOP documentation and providing clear guidance on
+              workflow procedures, ensuring consistency and accuracy across
+              teams. Improved Collaboration :white_check_mark: - Foster
+              collaboration and knowledge sharing among team members by
+              centralizing SOP documentation and enabling collaborative editing
+              and feedback. Examples of Use Cases: A marketing team uses SLD to
+              document standard procedures for campaign status updates,
+              including specific tasks, timelines, and resource requirements. A
+              project management team utilizes SLD to outline SOPs for project
+              milestones, providing detailed instructions and links to relevant
+              project documents and resources. A human resources department
+              leverages SLD to enhance onboarding procedures for new employees.
+              Questions? Book a demo! </p>
+          </div>
+          <button class="read-more-btn">
+            <span class="btn-text">Read More</span>
+          </button>
+        </div>
+        <!-- Card 1 - end -->
+        <!-- Card 2 -->
+        <div class="card card-2 courses-card" id="card-2-image">
+          <div class="card-1-div">
+            <div class="courses-1-sub-div-1"></div>
+            <div class="card-1-sub-div-2">
+              <button class="card-1-button-1">
+                Install Now
+                <img src="images/Download.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-1-div-2 paragraph-container">
+            <p> Status Label Directory (SLD) is a powerful tool designed to
+              streamline standard operating procedure (SOP) documentation and
+              enhance workflow management within monday.com. Tailored for teams
+              seeking to optimize their processes and improve productivity, SLD
+              offers a centralized hub where users can organize, document, and
+              track SOPs associated with status labels in their monday.com
+              boards. Features and Benefits: Effortless Organization
+              :white_check_mark: - Easily list out labels of all status columns
+              in a board in a separate board view, providing a comprehensive
+              overview of workflow statuses and associated procedures.
+              Customizable Notes and Links :white_check_mark: - Add detailed
+              notes and links to each status label, enabling users to document
+              specific actions, instructions, or references related to
+              individual labels. Training and Onboarding Support
+              :white_check_mark: - Facilitate training and onboarding processes
+              by providing new team members with quick access to SOP
+              documentation directly within the monday.com platform. Increased
+              Efficiency :white_check_mark: - Save time and reduce errors by
+              standardizing SOP documentation and providing clear guidance on
+              workflow procedures, ensuring consistency and accuracy across
+              teams. Improved Collaboration :white_check_mark: - Foster
+              collaboration and knowledge sharing among team members by
+              centralizing SOP documentation and enabling collaborative editing
+              and feedback. Examples of Use Cases: A marketing team uses SLD to
+              document standard procedures for campaign status updates,
+              including specific tasks, timelines, and resource requirements. A
+              project management team utilizes SLD to outline SOPs for project
+              milestones, providing detailed instructions and links to relevant
+              project documents and resources. A human resources department
+              leverages SLD to enhance onboarding procedures for new employees.
+              Questions? Book a demo!</p>
+          </div>
+          <button class="read-more-btn">
+            <span class="btn-text">Read More</span>
+          </button>
+        </div>
+        <!--card 2 -end -->
+      </div>
+    </div>
+    `;
+  }
+}
+
+class SpecialOthers extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <div class="card-main-container">
+      <div class="card-container">
+      <!-- Starting of card - 1 of Others section -->
+        <div class="card card-1" id="card-2-image">
+          <div class="card-1-div">
+            <div class="others-1-sub-div-1"></div>
+            <div class="card-1-sub-div-2">
+              <button class="card-1-button-1">
+                Install Now
+                <img src="images/Download.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-1-div-2 paragraph-container">
+            <p>
+              Status Label Directory (SLD) is a powerful tool designed to
+              streamline standard operating procedure (SOP) documentation and
+              enhance workflow management within monday.com. Tailored for teams
+              seeking to optimize their processes and improve productivity, SLD
+              offers a centralized hub where users can organize, document, and
+              track SOPs associated with status labels in their monday.com
+              boards. Features and Benefits: Effortless Organization
+              :white_check_mark: - Easily list out labels of all status columns
+              in a board in a separate board view, providing a comprehensive
+              overview of workflow statuses and associated procedures.
+              Customizable Notes and Links :white_check_mark: - Add detailed
+              notes and links to each status label, enabling users to document
+              specific actions, instructions, or references related to
+              individual labels. Training and Onboarding Support
+              :white_check_mark: - Facilitate training and onboarding processes
+              by providing new team members with quick access to SOP
+              documentation directly within the monday.com platform. Increased
+              Efficiency :white_check_mark: - Save time and reduce errors by
+              standardizing SOP documentation and providing clear guidance on
+              workflow procedures, ensuring consistency and accuracy across
+              teams. Improved Collaboration :white_check_mark: - Foster
+              collaboration and knowledge sharing among team members by
+              centralizing SOP documentation and enabling collaborative editing
+              and feedback. Examples of Use Cases: A marketing team uses SLD to
+              document standard procedures for campaign status updates,
+              including specific tasks, timelines, and resource requirements. A
+              project management team utilizes SLD to outline SOPs for project
+              milestones, providing detailed instructions and links to relevant
+              project documents and resources. A human resources department
+              leverages SLD to enhance onboarding procedures for new employees.
+              Questions? Book a demo!
+            </p>
+          </div>
+          <button class="read-more-btn">
+            <span class="btn-text">Read More</span>
+          </button>
+        </div>
+        <!-- Ending of card - 1 of Others section -->
+        <!-- Starting of card - 2 of Others section -->
+        <div class="card card-2" id="card-3-image">
+          <div class="card-1-div">
+            <div class="others-1-sub-div-1"></div>
+            <div class="card-1-sub-div-2">
+              <button class="card-1-button-1">
+                Install Now
+                <img src="images/Download.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-1-div-2 paragraph-container">
+            <p>
+              Status Label Directory (SLD) is a powerful tool designed to
+              streamline standard operating procedure (SOP) documentation and
+              enhance workflow management within monday.com. Tailored for teams
+              seeking to optimize their processes and improve productivity, SLD
+              offers a centralized hub where users can organize, document, and
+              track SOPs associated with status labels in their monday.com
+              boards. Features and Benefits: Effortless Organization
+              :white_check_mark: - Easily list out labels of all status columns
+              in a board in a separate board view, providing a comprehensive
+              overview of workflow statuses and associated procedures.
+              Customizable Notes and Links :white_check_mark: - Add detailed
+              notes and links to each status label, enabling users to document
+              specific actions, instructions, or references related to
+              individual labels. Training and Onboarding Support
+              :white_check_mark: - Facilitate training and onboarding processes
+              by providing new team members with quick access to SOP
+              documentation directly within the monday.com platform. Increased
+              Efficiency :white_check_mark: - Save time and reduce errors by
+              standardizing SOP documentation and providing clear guidance on
+              workflow procedures, ensuring consistency and accuracy across
+              teams. Improved Collaboration :white_check_mark: - Foster
+              collaboration and knowledge sharing among team members by
+              centralizing SOP documentation and enabling collaborative editing
+              and feedback. Examples of Use Cases: A marketing team uses SLD to
+              document standard procedures for campaign status updates,
+              including specific tasks, timelines, and resource requirements. A
+              project management team utilizes SLD to outline SOPs for project
+              milestones, providing detailed instructions and links to relevant
+              project documents and resources. A human resources department
+              leverages SLD to enhance onboarding procedures for new employees.
+              Questions? Book a demo!
+            </p>
+          </div>
+          <button class="read-more-btn">
+            <span class="btn-text">Read More</span>
+          </button>
+        </div>
+        <!-- Ending of card - 2 of Others section -->
+        <!-- Starting of card - 3 of Others section -->
+        <div class="card card-3" id="card-3-image">
+          <div class="card-1-div">
+            <div class="others-1-sub-div-1"></div>
+            <div class="card-1-sub-div-2">
+              <button class="card-1-button-1">
+                Install Now
+                <img src="images/Download.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-1-div-2 paragraph-container">
+            <p>
+              Status Label Directory (SLD) is a powerful tool designed to
+              streamline standard operating procedure (SOP) documentation and
+              enhance workflow management within monday.com. Tailored for teams
+              seeking to optimize their processes and improve productivity, SLD
+              offers a centralized hub where users can organize, document, and
+              track SOPs associated with status labels in their monday.com
+              boards. Features and Benefits: Effortless Organization
+              :white_check_mark: - Easily list out labels of all status columns
+              in a board in a separate board view, providing a comprehensive
+              overview of workflow statuses and associated procedures.
+              Customizable Notes and Links :white_check_mark: - Add detailed
+              notes and links to each status label, enabling users to document
+              specific actions, instructions, or references related to
+              individual labels. Training and Onboarding Support
+              :white_check_mark: - Facilitate training and onboarding processes
+              by providing new team members with quick access to SOP
+              documentation directly within the monday.com platform. Increased
+              Efficiency :white_check_mark: - Save time and reduce errors by
+              standardizing SOP documentation and providing clear guidance on
+              workflow procedures, ensuring consistency and accuracy across
+              teams. Improved Collaboration :white_check_mark: - Foster
+              collaboration and knowledge sharing among team members by
+              centralizing SOP documentation and enabling collaborative editing
+              and feedback. Examples of Use Cases: A marketing team uses SLD to
+              document standard procedures for campaign status updates,
+              including specific tasks, timelines, and resource requirements. A
+              project management team utilizes SLD to outline SOPs for project
+              milestones, providing detailed instructions and links to relevant
+              project documents and resources. A human resources department
+              leverages SLD to enhance onboarding procedures for new employees.
+              Questions? Book a demo!
+            </p>
+          </div>
+          <button class="read-more-btn">
+            <span class="btn-text">Read More</span>
+          </button>
+        </div>
+        <!-- Ending of card - 3 of Oters section -->
+      </div>
+    </div>
+
+`;
+  }
+}
 customElements.define("special-header", Specialheader);
 customElements.define("special-brand", Specialbrand);
 customElements.define("special-form", Specialform);
 customElements.define("special-footer", Specialfooter);
+customElements.define("special-apps", SpecialApps);
+customElements.define("special-courses", SpecialCourses);
+customElements.define("special-others", SpecialOthers);
 
 document.addEventListener("DOMContentLoaded", function () {
   // Function to set the current page
@@ -395,209 +842,157 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Check if there is a selected category in localStorage
-  const selectedCategory = localStorage.getItem("selectedCategory");
-
-  // Define colors for category transitions
   const transitionColors = {
-    'apps-to-courses': {
-      currentPageColor: 'rgba(234, 40, 40, 0.25)', // Background color for current-page class
-      secondPageColor: 'rgba(234, 40, 40, 0.25)' // Background color for second-page-current-page class
+    "apps-to-courses": {
+      currentPageColor: "rgba(234, 40, 40, 0.25)",
+      secondPageColor: "rgba(234, 40, 40, 0.25)",
     },
-    'courses-to-others': {
-      currentPageColor: 'rgba(255, 0, 199, 0.25)', // Background color for current-page class
-      secondPageColor: 'rgba(255, 0, 199, 0.25)' // Background color for second-page-current-page class
-    }
+    "courses-to-others": {
+      currentPageColor: "rgba(255, 0, 199, 0.25)",
+      secondPageColor: "rgba(255, 0, 199, 0.25)",
+    },
   };
 
   function updateBackgroundColors(categoryTransition) {
-    const navbarButtonsHome = document.querySelector(".navbar-buttons-home");
-    const currentPageElement = navbarButtonsHome?.querySelector(".current-page");
-    const secondPageCurrentPageElements = document.querySelectorAll(".second-page-first-list .second-page-current-page");
-
     const colors = transitionColors[categoryTransition];
+    if (!colors) return;
 
-    if (currentPageElement && colors) {
-      currentPageElement.style.backgroundColor = colors.currentPageColor;
-    }
+    document.querySelectorAll(".current-page").forEach((el) => {
+      el.style.backgroundColor = colors.currentPageColor;
+    });
 
-    secondPageCurrentPageElements.forEach(element => {
-      if (colors) {
-        element.style.backgroundColor = colors.secondPageColor;
-      }
+    document.querySelectorAll(".second-page-current-page").forEach((el) => {
+      el.style.backgroundColor = colors.secondPageColor;
     });
   }
 
-  if (selectedCategory) {
-    changeCardImages(selectedCategory);
-    setActiveCategory(selectedCategory);
-    localStorage.removeItem("selectedCategory");
-  } else {
-    const defaultCategory = "apps";
-    changeCardImages(defaultCategory);
-    setActiveCategory(defaultCategory);
-  }
+  function updateVisibility(category) {
+    document
+      .querySelectorAll(".special-apps, .special-courses, .special-others")
+      .forEach((el) => {
+        el.style.display = "none";
+      });
 
-  document.getElementById("category-others")?.addEventListener("click", () => changeCategory("others"));
-  document.getElementById("category-apps")?.addEventListener("click", () => changeCategory("apps"));
-  document.getElementById("category-courses")?.addEventListener("click", () => changeCategory("courses"));
-  document.getElementById("category-products")?.addEventListener("click", () => changeCategory("products"));
-
-  function changeCategory(category) {
-    // Store the selected category in localStorage
-    localStorage.setItem("selectedCategory", category);
-    // Reload the page
-    location.reload();
-  }
-
-  function setActiveCategory(category) {
-    document.querySelectorAll(".second-page-first-list li").forEach(function (el) {
-      el.classList.remove("second-page-current-page");
-    });
-
-    const categoryElement = document.getElementById(`category-${category}`);
-
-    if (categoryElement) {
-      categoryElement.classList.add("second-page-current-page");
-    } else {
-      console.error(`Element with ID 'category-${category}' not found.`);
-    }
-
-    // Apply or remove special classes for different categories
-    if (category === "courses" || category === "products") {
-      applyCoursesOrProductsStyles(category);
-      if (category === "courses") {
-        updateBackgroundColors('apps-to-courses'); // Update colors when moving from apps to courses
-      }
+    if (category === "apps") {
+      document.querySelectorAll(".special-apps").forEach((el) => {
+        el.style.display = "block";
+      });
+    } else if (category === "courses") {
+      document.querySelectorAll(".special-courses").forEach((el) => {
+        el.style.display = "block";
+      });
     } else if (category === "others") {
-      applyOthersStyles();
-      updateBackgroundColors('courses-to-others'); // Update colors when moving from courses to others
-    } else {
-      removeCoursesOrProductsStyles();
+      document.querySelectorAll(".special-others").forEach((el) => {
+        el.style.display = "block";
+      });
+    }
+  }
+
+  function applySectionClasses(section) {
+    // Reset all classes
+    document
+      .querySelector(".navbar-buttons-home")
+      ?.classList.remove("more-navbar");
+    document.querySelector(".rectangle")?.classList.remove("more-rectangle");
+    document.querySelector(".form")?.classList.remove("more-form-highlight");
+
+    if (section === "others") {
+      document
+        .querySelector(".navbar-buttons-home")
+        ?.classList.add("more-navbar");
+      document.querySelector(".rectangle")?.classList.add("more-rectangle");
+      document.querySelector(".form")?.classList.add("more-form-highlight");
     }
   }
 
   function changeCardImages(category) {
     const images = {
-      apps: ["images/UTLogo1.png", "images/sld.png", "images/fbe.png"],
-      courses: ["images/course.png", "images/course.png", "images/course.png"],
-      products: ["images/product1.png", "images/product2.png", "images/product3.png"],
-      others: ["images/others-card1.jpg", "images/others-card2.jpg", "images/others-card3.jpg"],
+      apps: [
+        "images/UTLogo1.png",
+        "images/sld.png",
+        "images/fbe.png",
+        "images/course-1.png",
+      ],
+      courses: [
+        "images/course-1.png",
+        "images/course-2.png",
+        "images/course-3.png",
+      ],
+      others: [
+        "images/others-1.png",
+        "images/others-2.png",
+        "images/others-3.png",
+      ],
     };
 
-    document.querySelectorAll(".card-container .card").forEach((card, index) => {
-      const subDiv = card.querySelector(".card-1-sub-div-1");
-      subDiv.style.backgroundImage = `url(${images[category][index]})`;
+    let cardSelector;
+    let subDivClass;
+
+    if (category === "apps") {
+      cardSelector = ".special-apps .card";
+      subDivClass = ".card-1-sub-div-1";
+    } else if (category === "courses") {
+      cardSelector = ".special-courses .card";
+      subDivClass = ".courses-1-sub-div-1";
+    } else if (category === "others") {
+      cardSelector = ".special-others .card";
+      subDivClass = ".others-1-sub-div-1";
+    }
+
+    document.querySelectorAll(cardSelector).forEach((card, index) => {
+      const subDiv = card.querySelector(subDivClass);
+      const categoryImages = images[category];
+
+      if (subDiv && categoryImages && categoryImages[index]) {
+        subDiv.style.backgroundImage = `url(${categoryImages[index]})`;
+        subDiv.style.backgroundSize = "cover";
+        subDiv.style.backgroundPosition = "center";
+        subDiv.style.display = "block"; // Ensure the image div is displayed
+      } else if (subDiv) {
+        subDiv.style.backgroundImage = ""; // Clear any background image if no match
+      }
     });
   }
 
-  function applyCoursesOrProductsStyles(category) {
-    console.log("Applying styles for category:", category); // Verify function execution
-    const rectangle = document.querySelector(".rectangle");
-    const navbarButtonsHome = document.querySelector(".navbar-buttons-home");
-    const cardContainer = document.querySelector(".card-container");
-    const form = document.querySelector(".form"); // Ensure this matches the HTML class
+  function setActiveCategory(category) {
+    document.querySelectorAll(".second-page-first-list li").forEach((el) => {
+      el.classList.remove("second-page-current-page");
+    });
 
-    console.log("Form element:", form); // Verify form selection
-
-    if (rectangle) {
-      rectangle.classList.add("courses-rectangle");
+    const categoryElement = document.getElementById(`category-${category}`);
+    if (categoryElement) {
+      categoryElement.classList.add("second-page-current-page");
     }
 
-    if (navbarButtonsHome) {
-      navbarButtonsHome.classList.add("courses-navbar-buttons");
+    updateVisibility(category);
+    changeCardImages(category);
+
+    if (category === "courses") {
+      updateBackgroundColors("apps-to-courses");
+    } else if (category === "others") {
+      updateBackgroundColors("courses-to-others");
     }
 
-    // Apply the CSS classes for "courses" category
-    if (category === "courses" && cardContainer) {
-      cardContainer.classList.add("courses-card-container");
-      cardContainer.classList.add("hide-third-card");
-
-      // Apply the class for card styling
-      document.querySelectorAll(".card-container .card").forEach((card) => {
-        card.classList.add("courses-card");
-      });
-    }
-
-    // Apply the .form-highlight class to form in the courses or products section
-    if (form) {
-      console.log("Applying form-highlight class"); // Debug statement
-      if (category === "courses" || category === "products") {
-        form.classList.add("form-highlight");
-      }
-    }
+    applySectionClasses(category);
   }
 
-  function applyOthersStyles() {
-    console.log("Applying styles for others category"); // Verify function execution
-    const rectangle = document.querySelector(".rectangle");
-    const navbarButtonsHome = document.querySelector(".navbar-buttons-home");
-    const form = document.querySelector(".form");
-
-    if (rectangle) {
-      rectangle.classList.add("more-rectangle");
-    }
-
-    if (navbarButtonsHome) {
-      navbarButtonsHome.classList.add("more-navbar");
-    }
-
-    // Update the form styles for "others" category
-    if (form) {
-      form.classList.add("more-form-highlight");
-    }
+  function changeCategory(category) {
+    localStorage.setItem("selectedCategory", category);
+    location.reload();
   }
 
-  function removeCoursesOrProductsStyles() {
-    console.log("Removing styles"); // Verify function execution
-    const rectangle = document.querySelector(".rectangle");
-    const navbarButtonsHome = document.querySelector(".navbar-buttons-home");
-    const cardContainer = document.querySelector(".card-container");
-    const form = document.querySelector(".form"); // Select the form element
+  // Initialize with the selected category
+  const selectedCategory = localStorage.getItem("selectedCategory") || "apps";
+  setActiveCategory(selectedCategory);
+  localStorage.removeItem("selectedCategory");
 
-    if (rectangle) {
-      rectangle.classList.remove("courses-rectangle");
-      rectangle.classList.remove("more-rectangle"); // Remove more-rectangle class
-    }
-
-    if (navbarButtonsHome) {
-      navbarButtonsHome.classList.remove("courses-navbar-buttons");
-      navbarButtonsHome.classList.remove("more-navbar"); // Remove more-navbar class
-    }
-
-    // Remove the classes and reset styles
-    if (cardContainer) {
-      cardContainer.classList.remove("courses-card-container");
-      cardContainer.classList.remove("hide-third-card");
-
-      document.querySelectorAll(".card-container .card").forEach((card) => {
-        card.classList.remove("courses-card");
-      });
-
-      // Reset to original margin-left value
-      // Show the third card
-      document.querySelector(".card-container .card:nth-child(3)").style.display = "block";
-      // Reset flex properties
-      cardContainer.style.display = "";
-      cardContainer.style.flexWrap = "";
-      // Reset border color and width of all cards
-      document.querySelectorAll(".card-container .card").forEach((card) => {
-        card.style.borderColor = ""; // Reset to original border color
-        card.style.width = ""; // Reset to original width
-      });
-      // Reset height of .card-1-div for other categories
-      document.querySelectorAll(".card-1-div").forEach((cardDiv) => {
-        cardDiv.style.height = ""; // Reset to original height
-      });
-      // Reset width and height of .card-1-sub-div-1 for other categories
-      document.querySelectorAll(".card-1-sub-div-1").forEach((subDiv) => {
-        subDiv.style.width = ""; // Reset to original width
-        subDiv.style.height = ""; // Reset to original height
-      });
-      // Remove the .form-highlight class from the form for other categories
-      if (form) {
-        form.classList.remove("form-highlight");
-      }
-    }
-  }
+  document
+    .getElementById("category-others")
+    ?.addEventListener("click", () => changeCategory("others"));
+  document
+    .getElementById("category-apps")
+    ?.addEventListener("click", () => changeCategory("apps"));
+  document
+    .getElementById("category-courses")
+    ?.addEventListener("click", () => changeCategory("courses"));
 });

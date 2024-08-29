@@ -129,7 +129,7 @@ html {
   width: 9rem;
   height: 3.2rem;
   border-radius: 100px;
-  background-color: rgba(234, 121, 40,0.25);
+  background-color: rgba(234, 121, 40, 0.25);
   opacity: 1;
   padding: 0.5rem 1rem;
   box-sizing: border-box;
@@ -373,6 +373,11 @@ html {
   border: none;
   width: 100%;
   height: 50vh;
+}
+.contact-name,
+.city,
+.postcode {
+  outline: none;
 }
 .contact-name {
   width: 100%;
@@ -686,13 +691,34 @@ a {
 }
 
 /* page-2 */
+.special-apps {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
 .card-main-container {
-  height: 60rem;
+  height: 100%;
   width: 100%;
   border: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/Vector-product-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-main-container-courses {
+  height: 100%;
+  width: 100%;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
   background-image: url(images/Vector-product-2.png);
@@ -710,7 +736,23 @@ a {
   scrollbar-width: none; /* Hide scrollbar for Firefox */
   z-index: 1;
   position: relative;
-  top: 60px;
+}
+.card-container-courses {
+  display: flex;
+  overflow-x: scroll; /* Space between cards */
+  padding: 0px;
+  scroll-snap-type: x mandatory; /* Optional: for snap scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  z-index: 1;
+  position: relative;
+  gap: 12px;
+}
+
+.courses-card-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
@@ -763,6 +805,28 @@ a {
   width: 118px;
   height: 118px;
 }
+.courses-1-sub-div-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  width: 118px;
+  height: 118px;
+}
+.others-1-sub-div-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  width: 118px;
+  height: 118px;
+}
 .courses-category {
   margin-left: 26px;
   display: flex;
@@ -779,7 +843,7 @@ a {
   height: 50%;
 }
 
-.courses-category .card-1-sub-div-1 {
+.courses-category .courses-1-sub-div-1 {
   width: 252px;
   height: 140px;
 }
@@ -805,15 +869,10 @@ a {
 }
 
 .others-category .form {
-  border: 1px solid #FFBFF1;
+  border: 1px solid #ffbff1;
   box-shadow: 0px 0px 20px 4px rgba(255, 0, 199, 0.12);
 }
 /* CSS for Courses category */
-.courses-card-container {
-  margin: auto;
-  display: flex;
-  flex-wrap: nowrap;
-}
 
 .courses-card {
   border: 1px solid rgba(234, 121, 40, 0.25);
@@ -824,14 +883,9 @@ a {
   height: 50%;
 }
 
-.courses-card .card-1-sub-div-1 {
+.courses-card .courses-1-sub-div-1 {
   width: 252px;
   height: 140px;
-}
-
-/* CSS for showing only two cards and hiding the third card */
-.hide-third-card .card:nth-child(3) {
-  display: none;
 }
 
 /* .card-2-sub-div-1 {
@@ -942,11 +996,10 @@ a {
 
 .product-special-brand {
   position: relative;
-  top: 20px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2vw;
+  height: 20rem;
 }
 .second-page-first-buttons-div {
   width: 100%;
@@ -968,20 +1021,22 @@ a {
   justify-content: center;
   align-items: center;
 }
-.courses-rectangle,.courses-navbar-buttons{
-  box-shadow: 0px 0px 20px 4px rgba(234, 40, 40,0.12);
+.courses-rectangle,
+.courses-navbar-buttons {
+  box-shadow: 0px 0px 20px 4px rgba(234, 40, 40, 0.12);
 }
 .form-highlight {
   border: 1px solid rgba(234, 121, 40, 0.25);
-  box-shadow: 0px 0px 20px 4px rgba(234, 40, 40,0.12) ;
+  box-shadow: 0px 0px 20px 4px rgba(234, 40, 40, 0.12);
 }
-.more-navbar ,.more-rectangle{
-  box-shadow: 0px 0px 20px 4px rgb(255, 0, 199 , 0.12);
+.more-navbar,
+.more-rectangle {
+  box-shadow: 0px 0px 20px 4px rgb(255, 0, 199, 0.12);
   border: 1px solid pink;
 }
-.more-form-highlight{
-  border: 1px solid #FFBFF1;
-  box-shadow: 0px 0px 20px 4px rgba(255, 0, 199 ,0.12) ;
+.more-form-highlight {
+  border: 1px solid #ffbff1;
+  box-shadow: 0px 0px 20px 4px rgba(255, 0, 199, 0.12);
 }
 .second-page-first-list {
   display: flex;
@@ -1015,7 +1070,7 @@ a {
   width: 9rem;
   height: 3.2rem;
   border-radius: 100px;
-  background-color: rgba(234, 121, 40,0.25);
+  background-color: rgba(234, 121, 40, 0.25);
   opacity: 1;
   padding: 0.5rem 1rem; /* Adjust padding */
   box-sizing: border-box; /* Ensure consistent sizing */
@@ -1034,12 +1089,12 @@ a {
     width: 23rem;
     height: 23rem;
   }
-  .courses-card{
+  .courses-card {
     width: 480px;
   }
-  .courses-card .card-1-sub-div-1 {
+  .courses-card .courses-1-sub-div-1 {
     width: 225px;
-}
+  }
 }
 
 @media (max-width: 768px) {
@@ -1084,12 +1139,12 @@ a {
     margin-left: 2rem;
     padding: 0 10px;
   }
-  .courses-card{
+  .courses-card {
     width: 485px;
   }
-  .courses-card .card-1-sub-div-1 {
+  .courses-card .courses-1-sub-div-1 {
     width: 225px;
-}
+  }
   .actual-form {
     padding-left: 2rem;
   }
@@ -1098,7 +1153,7 @@ a {
   }
   .special-form {
     width: 90%;
-    height: 45.5rem;
+    height: 40.5rem;
   }
 
   .form-submit-button > button {
@@ -1110,8 +1165,11 @@ a {
   }
   .first-form-para > p {
     font-family: "Nunito Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
+  }
+  .para-form > p {
+    font-size: 0.9rem;
   }
   .first-form-para {
     width: 18rem;
@@ -1140,7 +1198,9 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
-
+  .simple-save-lovely {
+    width: 16rem;
+  }
   .side-navbar-heading-div {
     height: 16vh;
   }
@@ -1151,7 +1211,13 @@ a {
     cursor: pointer;
   }
   .card-main-container {
-    height: 50rem;
+    height: 32rem;
+  }
+  .courses-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -1165,10 +1231,10 @@ a {
   .side-navbar-heading {
     font-size: 1rem;
   }
-  .sidebar{
+  .sidebar {
     margin-left: 0;
   }
-  .nav-2{
+  .nav-2 {
     display: none;
   }
   .first-container {
@@ -1192,32 +1258,38 @@ a {
     gap: 1.5vw;
     top: 0;
   }
-  .card{
+  .card {
     width: 380px;
   }
-  .courses-card .card-1-sub-div-1 {
+  .courses-card .courses-1-sub-div-1 {
     width: 185px;
     height: 115px;
-}
-.card-1-button-1 {
-  width: 130px;
-  font-size: 14px;
-}
+  }
+  .card-1-button-1 {
+    width: 130px;
+    font-size: 14px;
+  }
   .special-brands {
     top: 0;
   }
-  .rectangle{
-    width:24rem;
+  .rectangle {
+    width: 24rem;
   }
   .card-container {
     margin-left: 2rem;
     padding: 0 10px;
-}
-.card-main-container{
-  height: 53rem;
-}
-  .second-page-current-page{
+  }
+  .card-main-container {
+    height: 30rem;
+  }
+  .second-page-current-page {
     width: 7.5rem;
+  }
+  .product-special-brand {
+    height: 24rem;
+  }
+  .brands {
+    height: 10rem;
   }
   .form {
     display: flex;
@@ -1300,6 +1372,28 @@ a {
     width: 12vw;
   }
 }
+
+.legal-heading {
+  color: #ea7928;
+  font-family: "Fenix", serif;
+  padding-top: 0.714rem;
+  padding-right: 1.286rem;
+  padding-bottom: 2%;
+}
+.legal-simple{
+ 
+    color: #6d2e00;
+    font-weight: 550;
+    font-family: "Nunito Sans", sans-serif;
+}
+.legal{
+  padding-left: 3%;
+}
+p{
+  font-family: "Nunito Sans", sans-serif;
+  padding: 1%;
+}
+
 
 /* @media (width <= 768px) {
 
