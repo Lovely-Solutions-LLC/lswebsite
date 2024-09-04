@@ -345,15 +345,15 @@ class SpecialCourses extends HTMLElement {
             </div>
           </div>
           <div class="card-1-div-2 paragraph-container">
-            <p> monday.com for Beginners: Taught by a Certified Expert <br>
-            Are you new to Monday and eager to learn how to make the most of this powerful WorkOS platform? Whether you're a solo entrepreneur, a team leader, or someone simply looking to get organized, this course is designed to help you master the basics and beyond. <br>
+          <h3 class-"card-heading">monday.com for Beginners: Taught by a Certified Expert</h3>
+            <p> 
+            Are you new to Monday and eager to learn how to make the most of this powerful WorkOS platform? Whether you're a solo entrepreneur, a team leader, or someone simply looking to get organized, this course is designed to help you master the basics and beyond.🚀 <br>
 
-Welcome to "Monday for Beginners: Taught by a Certified Expert." My name is Liam, and I'm a certified advanced workflow builder, implementor, and developer by Monday. As the lead architect and workflow designer at a digital workflow consulting firm, I've spent countless hours building, optimizing, and living within the Monday platform, creating efficient workflows for companies big and small across various industries.<br>
-
+<br>
 In this comprehensive course, you'll learn how to navigate Monday and understand everything that it has to offer. We'll dive into the essential components like workspaces, boards, groups, items, and subitems, so you can organize your data effectively. You'll also explore the powerful column options, board views, and dashboards that will help you visualize your work and keep your team on track. <br>
-
+<br>
 We'll also cover automations and workflows to save you time and reduce manual tasks, ensuring that you and your team can focus on what really matters. <br>
-
+<br>
 By the end of this course, you'll have the knowledge and confidence to work, build, and even teach others how to use Monday within your organization. So, if you're ready to get organized and maximize your productivity, join me in this course and let's get started on your journey to mastering Monday!</p>
           </div>
           <button class="read-more-btn">
