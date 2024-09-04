@@ -103,40 +103,6 @@ class Specialform extends HTMLElement {
           />
           <input
             class="contact-name"
-            type="text"
-            name="street"
-            id="street"
-            placeholder="Street"
-            required
-          />
-          <div class="multiple-inputs">
-            <input
-              class="city"
-              type="text"
-              name="city"
-              id="city"
-              placeholder="City"
-              required
-            />
-            <input
-              class="postcode"
-              type="text"
-              name="postcode"
-              id="postcode"
-              placeholder="Postcode"
-              required
-            />
-          </div>
-          <input
-            class="contact-name"
-            type="text"
-            name="contact-phone"
-            id="contact-phone"
-            placeholder="Contact Phone"
-            required
-          />
-          <input
-            class="contact-name"
             type="email"
             name="email"
             id="email"
@@ -177,6 +143,7 @@ class Specialform extends HTMLElement {
 class Specialfooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<footer class="footer">
+ <div class=footer-first-container>
   <div class="footer-image">
     <div class="image-of-footer"></div>
   </div>
@@ -185,13 +152,10 @@ class Specialfooter extends HTMLElement {
       <p>Simple. Save. Lovely</p>
     </div>
     <div class="footer-first-info">
-      <div class="footer-first-info-first-div">
-        <p>(123) 456-7892</p>
-      </div>
       <div class="footer-first-info-second-div">
         <div class="footer-first-info-second-div-inside-div">
           <p>
-            <a href="mailto:contact@lovelysolutions.com">contact@lovelysolutions.com</a>
+            <a href="mailto:liam@lovelysolutions.co"> liam@lovelysolutions.co</a>
           </p>
         </div>
       </div>
@@ -200,9 +164,6 @@ class Specialfooter extends HTMLElement {
   <div class="footer-third-div">
     <div class="footer-first-third-div">
       <div class="footer-sub-first">
-        <p><a href="./index.html">Home</a></p>
-        <p><a href="./products.html">Products</a></p>
-        <p><a href="./more.html">More</a></p>
         <p><a href="./legal.html">Privacy Policy</a></p>
         <p><a href="./legal.html#terms">Terms of Service</a></p>
 
@@ -214,16 +175,16 @@ class Specialfooter extends HTMLElement {
       </div>
     </div>
     <div class="footer-second-third-div">
-      <p style="padding-top: 3px; color: #0a142f">
+      <p style="padding-top: 3px; padding-left: 1rem; color: #0a142f">
         © 2024 Lovely Solutions. All rights reserved.
       </p>
-    </div>
-    <div class="footer-second-last-button">
+      <div class="footer-second-last-button">
       <div class="footer-second-button">
         <button id="scrollToTopButton1" class="arrow-second-last-button">
           <img src="images/Group.png" alt="Arrow" class="arrow-image" />
         </button>
       </div>
+    </div>
     </div>
   </div>
   <div class="footer-last-button">
@@ -236,6 +197,7 @@ class Specialfooter extends HTMLElement {
   <div class="footer-last-third-div">
     <p>© 2024 Lovely Solutions. All rights reserved.</p>
   </div>
+</div>  
 </footer>
 `;
   }
@@ -250,45 +212,24 @@ class SpecialApps extends HTMLElement {
           <div class="card-1-div">
             <div class="card-1-sub-div-1"></div>
             <div class="card-1-sub-div-2">
-              <button class="card-1-button-1">
+              <button class="card-1-button-1" data-url="https://auth.monday.com/oauth2/authorize?client_id=fcd66ce926a909a32e80ba5346fd5b22&response_type=install">
                 Install Now
                 <img src="images/Download.png" alt="" />
               </button>
             </div>
           </div>
           <div class="card-1-div-2 paragraph-container">
+            <h3 class-"card-heading">Update Templates</h3>
             <p>
-              Status Label Directory (SLD) is a powerful tool designed to
-              streamline standard operating procedure (SOP) documentation and
-              enhance workflow management within monday.com. Tailored for teams
-              seeking to optimize their processes and improve productivity, SLD
-              offers a centralized hub where users can organize, document, and
-              track SOPs associated with status labels in their monday.com
-              boards. Features and Benefits: Effortless Organization
-              :white_check_mark: - Easily list out labels of all status columns
-              in a board in a separate board view, providing a comprehensive
-              overview of workflow statuses and associated procedures.
-              Customizable Notes and Links :white_check_mark: - Add detailed
-              notes and links to each status label, enabling users to document
-              specific actions, instructions, or references related to
-              individual labels. Training and Onboarding Support
-              :white_check_mark: - Facilitate training and onboarding processes
-              by providing new team members with quick access to SOP
-              documentation directly within the monday.com platform. Increased
-              Efficiency :white_check_mark: - Save time and reduce errors by
-              standardizing SOP documentation and providing clear guidance on
-              workflow procedures, ensuring consistency and accuracy across
-              teams. Improved Collaboration :white_check_mark: - Foster
-              collaboration and knowledge sharing among team members by
-              centralizing SOP documentation and enabling collaborative editing
-              and feedback. Examples of Use Cases: A marketing team uses SLD to
-              document standard procedures for campaign status updates,
-              including specific tasks, timelines, and resource requirements. A
-              project management team utilizes SLD to outline SOPs for project
-              milestones, providing detailed instructions and links to relevant
-              project documents and resources. A human resources department
-              leverages SLD to enhance onboarding procedures for new employees.
-              Questions? Book a demo!
+              Create and store templates for frequently made updates in a close-by item view!<br>
+<br>
+
+
+👥 Users can have their own templates, and also share with a collection available to all board members.<br>
+
+📋 Templates are stored with a "Copy to Clipboard" button right in view, which makes for easy copy and pasting of long, redundant updates.<br>
+
+📝 Instead of typing them out, copy them over from our item view into the updates section instantly!
             </p>
           </div>
           <button class="read-more-btn">
@@ -301,7 +242,7 @@ class SpecialApps extends HTMLElement {
           <div class="card-1-div">
             <div class="card-1-sub-div-1"></div>
             <div class="card-1-sub-div-2">
-              <button class="card-1-button-1">
+              <button class="card-1-button-1" data-url="https://auth.monday.com/oauth2/authorize?client_id=8121f847511946b234f84f1933539685&response_type=install">
                 Install Now
                 <img src="images/Download.png" alt="" />
               </button>
@@ -309,37 +250,25 @@ class SpecialApps extends HTMLElement {
           </div>
           <div class="card-1-div-2 paragraph-container">
             <p>
-              Status Label Directory (SLD) is a powerful tool designed to
-              streamline standard operating procedure (SOP) documentation and
-              enhance workflow management within monday.com. Tailored for teams
-              seeking to optimize their processes and improve productivity, SLD
-              offers a centralized hub where users can organize, document, and
-              track SOPs associated with status labels in their monday.com
-              boards. Features and Benefits: Effortless Organization
-              :white_check_mark: - Easily list out labels of all status columns
-              in a board in a separate board view, providing a comprehensive
-              overview of workflow statuses and associated procedures.
-              Customizable Notes and Links :white_check_mark: - Add detailed
-              notes and links to each status label, enabling users to document
-              specific actions, instructions, or references related to
-              individual labels. Training and Onboarding Support
-              :white_check_mark: - Facilitate training and onboarding processes
-              by providing new team members with quick access to SOP
-              documentation directly within the monday.com platform. Increased
-              Efficiency :white_check_mark: - Save time and reduce errors by
-              standardizing SOP documentation and providing clear guidance on
-              workflow procedures, ensuring consistency and accuracy across
-              teams. Improved Collaboration :white_check_mark: - Foster
-              collaboration and knowledge sharing among team members by
-              centralizing SOP documentation and enabling collaborative editing
-              and feedback. Examples of Use Cases: A marketing team uses SLD to
-              document standard procedures for campaign status updates,
-              including specific tasks, timelines, and resource requirements. A
-              project management team utilizes SLD to outline SOPs for project
-              milestones, providing detailed instructions and links to relevant
-              project documents and resources. A human resources department
-              leverages SLD to enhance onboarding procedures for new employees.
-              Questions? Book a demo!
+            <h3 class-"card-heading">Status Label Descriptions</h3>
+              Automatically organize & define status column labels in a list format!<br>
+              <br>
+            Status Label Directory is a powerful tool designed to streamline standard operating procedure (SOP) documentation and enhance workflow management within monday.com. Tailored for teams seeking to optimize their processes and improve productivity, SLD offers a centralized hub where users can organize, document, and track SOPs associated with status labels in their monday.com boards.<br>
+
+
+
+Features and Benefits:<br>
+
+Effortless Organization ✅ - Easily list out labels of all status columns in a board in a separate board view, providing a comprehensive overview of workflow statuses and associated procedures.<br>
+Customizable Notes and Links ✅ - Add detailed notes and links to each status label, enabling users to document specific actions, instructions, or references related to individual labels.<br>
+Training and Onboarding Support ✅ - Facilitate training and onboarding processes by providing new team members with quick access to SOP documentation directly within the monday.com platform.<br>
+Increased Efficiency ✅ - Save time and reduce errors by standardizing SOP documentation and providing clear guidance on workflow procedures, ensuring consistency and accuracy across teams.<br>
+Improved Collaboration ✅ - Foster collaboration and knowledge sharing among team members by centralizing SOP documentation and enabling collaborative editing and feedback.<br>
+Examples of Use Cases:<br>
+
+A marketing team uses SLD to document standard procedures for campaign status updates, including specific tasks, timelines, and resource requirements.<br>
+A project management team utilizes SLD to outline SOPs for project milestones, providing detailed instructions and links to relevant project documents and resources.<br>
+A human resources department leverages SLD to enhance onboarding procedures for new employees.
             </p>
           </div>
           <button class="read-more-btn">
@@ -352,45 +281,36 @@ class SpecialApps extends HTMLElement {
           <div class="card-1-div">
             <div class="card-1-sub-div-1"></div>
             <div class="card-1-sub-div-2">
-              <button class="card-1-button-1">
+              <button class="card-1-button-1" data-url="https://auth.monday.com/oauth2/authorize?client_id=cf3e474d48eee8a16da5552b1837c0c6&response_type=install">
                 Install Now
                 <img src="images/Download.png" alt="" />
               </button>
             </div>
           </div>
           <div class="card-1-div-2 paragraph-container">
+            <h3 class-"card-heading">Facebook Embedded</h3>
             <p>
-              Status Label Directory (SLD) is a powerful tool designed to
-              streamline standard operating procedure (SOP) documentation and
-              enhance workflow management within monday.com. Tailored for teams
-              seeking to optimize their processes and improve productivity, SLD
-              offers a centralized hub where users can organize, document, and
-              track SOPs associated with status labels in their monday.com
-              boards. Features and Benefits: Effortless Organization
-              :white_check_mark: - Easily list out labels of all status columns
-              in a board in a separate board view, providing a comprehensive
-              overview of workflow statuses and associated procedures.
-              Customizable Notes and Links :white_check_mark: - Add detailed
-              notes and links to each status label, enabling users to document
-              specific actions, instructions, or references related to
-              individual labels. Training and Onboarding Support
-              :white_check_mark: - Facilitate training and onboarding processes
-              by providing new team members with quick access to SOP
-              documentation directly within the monday.com platform. Increased
-              Efficiency :white_check_mark: - Save time and reduce errors by
-              standardizing SOP documentation and providing clear guidance on
-              workflow procedures, ensuring consistency and accuracy across
-              teams. Improved Collaboration :white_check_mark: - Foster
-              collaboration and knowledge sharing among team members by
-              centralizing SOP documentation and enabling collaborative editing
-              and feedback. Examples of Use Cases: A marketing team uses SLD to
-              document standard procedures for campaign status updates,
-              including specific tasks, timelines, and resource requirements. A
-              project management team utilizes SLD to outline SOPs for project
-              milestones, providing detailed instructions and links to relevant
-              project documents and resources. A human resources department
-              leverages SLD to enhance onboarding procedures for new employees.
-              Questions? Book a demo!
+              Embed Facebook posts seamlessly in monday.com!<br>
+              <br>
+              Features and Benefits:<br>
+
+✅Streamlined Integration: Seamlessly integrate Facebook posts into your monday.com dashboards or board views with just a few clicks, eliminating the need for manual copying and pasting. <br>
+
+✅Real-Time Updates: Keep your team informed and up-to-date with the latest Facebook content, ensuring everyone has access to timely information and insights. <br>
+
+✅Customizable Display: Customize the appearance of embedded Facebook posts to match your monday.com workspace, including options for resizing, styling, and placement. <br>
+
+✅Enhanced Collaboration: Foster collaboration and engagement among team members by sharing and discussing Facebook posts directly within the context of your monday.com projects and workflows. <br>
+
+✅Centralized Workspace: Consolidate all relevant information and communication channels in one centralized workspace, reducing the need to switch between multiple platforms and applications. <br>
+
+Examples of Use Cases: <br>
+
+A marketing team uses embedded Facebook posts to monitor customer feedback and engagement metrics directly within their campaign management dashboard. <br>
+
+An event planning team embeds Facebook event pages into their monday.com board view to track RSVPs, event updates, and attendee interactions. <br>
+
+A sales team leverages embedded Facebook posts to stay informed about industry trends, competitor activities, and customer testimonials, facilitating more informed sales conversations. <br>
             </p>
           </div>
           <button class="read-more-btn">
@@ -415,44 +335,14 @@ class SpecialCourses extends HTMLElement {
             <div class="courses-1-sub-div-1">
             </div>
             <div class="card-1-sub-div-2">
-              <button class="card-1-button-1">
-                Install Now
-                <img src="images/Download.png" alt="" />
+              <button class="card-1-button-1" data-url="https://www.udemy.com/course/monday-for-beginners/?referralCode=CA2E871F6E71C8119F1C">
+                Enroll
+                <img src="images/us.png" alt="" />
               </button>
             </div>
           </div>
           <div class="card-1-div-2 paragraph-container">
-            <p> Status Label Directory (SLD) is a powerful tool designed to
-              streamline standard operating procedure (SOP) documentation and
-              enhance workflow management within monday.com. Tailored for teams
-              seeking to optimize their processes and improve productivity, SLD
-              offers a centralized hub where users can organize, document, and
-              track SOPs associated with status labels in their monday.com
-              boards. Features and Benefits: Effortless Organization
-              :white_check_mark: - Easily list out labels of all status columns
-              in a board in a separate board view, providing a comprehensive
-              overview of workflow statuses and associated procedures.
-              Customizable Notes and Links :white_check_mark: - Add detailed
-              notes and links to each status label, enabling users to document
-              specific actions, instructions, or references related to
-              individual labels. Training and Onboarding Support
-              :white_check_mark: - Facilitate training and onboarding processes
-              by providing new team members with quick access to SOP
-              documentation directly within the monday.com platform. Increased
-              Efficiency :white_check_mark: - Save time and reduce errors by
-              standardizing SOP documentation and providing clear guidance on
-              workflow procedures, ensuring consistency and accuracy across
-              teams. Improved Collaboration :white_check_mark: - Foster
-              collaboration and knowledge sharing among team members by
-              centralizing SOP documentation and enabling collaborative editing
-              and feedback. Examples of Use Cases: A marketing team uses SLD to
-              document standard procedures for campaign status updates,
-              including specific tasks, timelines, and resource requirements. A
-              project management team utilizes SLD to outline SOPs for project
-              milestones, providing detailed instructions and links to relevant
-              project documents and resources. A human resources department
-              leverages SLD to enhance onboarding procedures for new employees.
-              Questions? Book a demo! </p>
+            <p> monday.com for Beginners: Taught by a Certified Expert</p>
           </div>
           <button class="read-more-btn">
             <span class="btn-text">Read More</span>
@@ -464,44 +354,14 @@ class SpecialCourses extends HTMLElement {
           <div class="card-1-div">
             <div class="courses-1-sub-div-1"></div>
             <div class="card-1-sub-div-2">
-              <button class="card-1-button-1">
-                Install Now
-                <img src="images/Download.png" alt="" />
+              <button class="card-1-button-1" data-url="https://your-install-url.com">
+                Coming soon!
+                <img src="imges/Download.png" alt="" />
               </button>
             </div>
           </div>
           <div class="card-1-div-2 paragraph-container">
-            <p> Status Label Directory (SLD) is a powerful tool designed to
-              streamline standard operating procedure (SOP) documentation and
-              enhance workflow management within monday.com. Tailored for teams
-              seeking to optimize their processes and improve productivity, SLD
-              offers a centralized hub where users can organize, document, and
-              track SOPs associated with status labels in their monday.com
-              boards. Features and Benefits: Effortless Organization
-              :white_check_mark: - Easily list out labels of all status columns
-              in a board in a separate board view, providing a comprehensive
-              overview of workflow statuses and associated procedures.
-              Customizable Notes and Links :white_check_mark: - Add detailed
-              notes and links to each status label, enabling users to document
-              specific actions, instructions, or references related to
-              individual labels. Training and Onboarding Support
-              :white_check_mark: - Facilitate training and onboarding processes
-              by providing new team members with quick access to SOP
-              documentation directly within the monday.com platform. Increased
-              Efficiency :white_check_mark: - Save time and reduce errors by
-              standardizing SOP documentation and providing clear guidance on
-              workflow procedures, ensuring consistency and accuracy across
-              teams. Improved Collaboration :white_check_mark: - Foster
-              collaboration and knowledge sharing among team members by
-              centralizing SOP documentation and enabling collaborative editing
-              and feedback. Examples of Use Cases: A marketing team uses SLD to
-              document standard procedures for campaign status updates,
-              including specific tasks, timelines, and resource requirements. A
-              project management team utilizes SLD to outline SOPs for project
-              milestones, providing detailed instructions and links to relevant
-              project documents and resources. A human resources department
-              leverages SLD to enhance onboarding procedures for new employees.
-              Questions? Book a demo!</p>
+            <p> monday.com Sales CRM for Beginners: Taught by a Certified Expert </p>
           </div>
           <button class="read-more-btn">
             <span class="btn-text">Read More</span>
@@ -513,6 +373,7 @@ class SpecialCourses extends HTMLElement {
     `;
   }
 }
+
 
 class SpecialOthers extends HTMLElement {
   connectedCallback() {
@@ -995,4 +856,19 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("category-courses")
     ?.addEventListener("click", () => changeCategory("courses"));
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const installButtons = document.querySelectorAll(".card-1-button-1");
+
+  installButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const url = button.getAttribute("data-url");
+      if (url) {
+        window.location.href = url;
+      } else {
+        console.error("URL not found for this button:", button);
+      }
+    });
+  });
 });
