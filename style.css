@@ -35,9 +35,9 @@ html {
   height: 60rem;
   position: relative;
   border: none;
-  background-image: url(images/Vector.png);
   overflow: hidden;
   object-fit: cover;
+  background-image: url(images/Vector.png);
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -722,7 +722,6 @@ a {
   grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
-  background-image: url(images/Vector-product-2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1686,5 +1685,10 @@ p {
 .card h3, .card h4 {
   font-weight: bold; /* Ensure headings are bold */
   font-size: 18px; /* Adjust heading size */
+}
+
+.special-others .card-container {
+  position: relative;
+  left: -45px; /* Move the card 20px to the left */
 }
 
