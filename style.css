@@ -1705,30 +1705,24 @@ p {
   opacity: 0.7; /* Make it slightly transparent */
 }
 
-/* Only show chevrons for the Apps section */
+/* General chevron styling for mobile */
+.mobile-chevron {
+  display: none; /* Hidden by default */
+}
+
 @media (max-width: 768px) {
-  .app-section .mobile-chevron-indicator {
+  /* Show chevrons only for the Apps section */
+  .special-apps .mobile-chevron {
     display: block;
   }
 
-  .left-chevron-indicator {
-    left: 10px;
-  }
-
-  .right-chevron-indicator {
-    right: 10px;
-  }
-
-  .app-section {
-    position: relative;
+  /* Hide chevrons for the Courses and Others sections */
+  .special-courses .mobile-chevron,
+  .special-others .mobile-chevron {
+    display: none;
   }
 }
 
-/* Ensure chevrons don't appear in Courses and Others sections */
-.special-courses .mobile-chevron-indicator,
-.special-others .mobile-chevron-indicator {
-  display: none !important;
-}
 
 
 
