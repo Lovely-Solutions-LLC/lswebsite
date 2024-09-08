@@ -21,3 +21,9 @@
   to = "/legal"
   status = 301
   force = true
+
+[[headers]]
+for = "/files/Building_Digital_Workflows.pdf"
+[headers.values]
+Content-Type = "application/pdf"
+
