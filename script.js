@@ -221,7 +221,7 @@ class SpecialApps extends HTMLElement {
               <button class="card-1-button-1" data-url="your-app-link">
                 Coming Soon!
               
-                <img src="images/Download.png" alt="Download Icon" />
+                <!-- Uncomment this when its time <img src="images/Download.png" alt="Download Icon" /> -->
     
               </button>
             </div>
