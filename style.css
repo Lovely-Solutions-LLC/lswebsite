@@ -1732,7 +1732,7 @@ p {
 @media (max-width: 768px) {
   /* Ensure special-brands has enough margin */
   .product-special-brand {
-    margin-bottom: 20rem; /* Add bottom margin */
+    margin-bottom: 2rem; /* Add bottom margin */
   }
 
   /* Ensure special-form has enough margin */
@@ -1743,7 +1743,7 @@ p {
   /* Ensure special-apps has proper padding and margin */
   .special-apps {
     margin-top: 2rem; /* Add top margin to ensure space */
-    padding-bottom: 20rem; /* Add padding at the bottom */
+    padding-bottom: 50rem; /* Add padding at the bottom */
   }
 }
 
