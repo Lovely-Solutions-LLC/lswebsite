@@ -743,16 +743,26 @@ a {
   top: 2rem;
 }
 .card-container {
-  display: flex;
-  overflow-x: scroll; /* Enable horizontal scrolling */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
   gap: 40px; /* Space between cards */
+  justify-content: center; /* Ensure the cards stay centered */
+  justify-items: center; /* Center the cards inside each column */
   padding: 0px;
-  margin-left: 91px; /* Padding around the container */
-  scroll-snap-type: x mandatory; /* Optional: for snap scrolling */
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
-  z-index: 1;
-  position: relative;
+  margin: auto; /* Center-align the grid in its container */
+  max-width: 1000px; /* Optional: Set a max-width to avoid cards stretching too far apart */
 }
+
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: 1fr; /* On smaller screens, stack the cards in a single column */
+    justify-items: center; /* Keep the cards centered in a single column */
+  }
+}
+
+
+
+
 .card-container-courses {
   display: flex;
   overflow-x: scroll; /* Space between cards */
@@ -777,21 +787,19 @@ a {
 }
 
 .card {
-  flex: 0 0 auto; /* Prevent the cards from shrinking */
-  width: 485px; /* Width of each card */
-  height: 462px; /* Height of each card */
-  background-color: white; /* Card background color */
-  border: 3px solid #fff5ee; /* Card border */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
-  padding-right: 20px; /* Padding inside the card */
-  padding-left: 20px; /* Padding inside the card */
-  scroll-snap-align: start; /* Optional: aligns cards with snap scrolling */
-  z-index: 2;
+  width: 100%;
+  max-width: 485px;
+  height: auto; /* Allow height to be flexible */
+  background-color: white;
+  border: 3px solid #fff5ee;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-right: 20px;
+  padding-left: 20px;
   margin: auto;
-  position: relative;
-  overflow: hidden;
 }
+
+
 .card h2 {
   margin-top: 0;
 }

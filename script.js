@@ -210,40 +210,58 @@ class SpecialApps extends HTMLElement {
     this.innerHTML = `
     <div class="card-main-container">
       <div class="card-container">
-        <!-- starting of card - 1 of apps section -->
+
+        <!-- Starting of card 1 - Ultimate Team Productivity Tracker -->
         <div class="card card-1" id="card-1-image">
           <div class="card-1-div">
-            <div class="card-1-sub-div-1"></div>
+            <div class="card-1-sub-div-1">
+              <img src="images/UTPT2.png" alt="Ultimate Team Productivity Tracker Icon" class="card-image" />
+            </div>
             <div class="card-1-sub-div-2">
-              <button class="card-1-button-1" data-url="https://auth.monday.com/oauth2/authorize?client_id=fcd66ce926a909a32e80ba5346fd5b22&response_type=install">
-                Install Now
-                <img src="images/Download.png" alt="" />
+              <button class="card-1-button-1" data-url="your-app-link">
+                Coming Soon!
+              
+                <img src="images/Download.png" alt="Download Icon" />
+    
               </button>
             </div>
           </div>
           <div class="card-1-div-2 paragraph-container">
-            <h3 class-"card-heading">Update Templates</h3>
+            <h3 class="card-heading">Ultimate Team Productivity Tracker</h3>
             <p>
-              Create and store templates for frequently made updates in a close-by item view!<br>
-<br>
-
-
-👥 Users can have their own templates, and also share with a collection available to all board members.<br>
-
-📋 Templates are stored with a "Copy to Clipboard" button right in view, which makes for easy copy and pasting of long, redundant updates.<br>
-
-📝 Instead of typing them out, copy them over from our item view into the updates section instantly!
+              Ultimate Team Productivity Tracker is THE solution for teams using monday.com to track and optimize their activities across all boards with one simple interface.<br><br>
+              Simple & Practical Key Features. No fluff, just pure value🚀 <br><br>
+              ✅ Visualize team activity trends throughout the day/week/month.<br>
+              -An operations manager uses daily trend charts to keep a pulse on team activity:<br>
+              -"We're seeing a big dip in activity on Friday afternoons. Maybe we should start doing Friday half-days."<br>
+              -"The team is most active at the start of the week. Let's schedule meetings around those productive times."<br><br>
+              ✅ Keep a pulse on team activity with a glance at the hub.<br>
+              -Last activity by user: "Everyone has had activity in the last 10 minutes. All hands are on deck!"<br>
+              -"How busy are we today? Wow, 50% more activity today than yesterday. Maybe tomorrow is better for that meeting."<br><br>
+              ✅ Spot Workload Imbalances & Bottlenecks Instantly.<br>
+              -A sales manager sees that one rep has 4x the activity of others: "Are they getting all the leads? Or maybe it's time for a raise?"<br>
+              -A project manager sees one project board getting all the attention: "Is that board the priority right now?"<br>
+              -"John has been updating the same tasks all day—maybe he needs help."<br><br>
+              ✅ Most Common Activities in Your Workflow.<br>
+              -"30% of team activity this week is on creating items in the sprint board. Let's try to automate this step." <br>
+              -"Updating column values on the Approvals board makes up 45% of our activity. Should we simplify that process?"<br><br>
+              ✅ Monitor Task Ownership & Accountability.<br>
+              -"I'm seeing that Mark hasn't updated his tasks in 3 days. Let's see if he's stuck."<br>
+              -"David is the only one updating campaign tasks. What is the rest of the team working on?"<br><br>
+              Get started today with the Ultimate Team Productivity Tracker. No fluff—just the insights you need!
             </p>
           </div>
           <button class="read-more-btn">
             <span class="btn-text">Read More</span>
           </button>
         </div>
-        <!-- Ending of card - 1 of apps section -->
-        <!-- starting of card - 2 of apps section -->
-        <div class="card card-1" id="card-1-image">
+
+        <!-- Starting of card 2 - Status Label Descriptions -->
+        <div class="card card-2" id="card-2-image">
           <div class="card-1-div">
-            <div class="card-1-sub-div-1"></div>
+            <div class="card-1-sub-div-1">
+              <img src="images/sld.png" alt="Status Label Descriptions Icon" class="card-image" />
+            </div>
             <div class="card-1-sub-div-2">
               <button class="card-1-button-1" data-url="https://auth.monday.com/oauth2/authorize?client_id=8121f847511946b234f84f1933539685&response_type=install">
                 Install Now
@@ -252,37 +270,60 @@ class SpecialApps extends HTMLElement {
             </div>
           </div>
           <div class="card-1-div-2 paragraph-container">
+            <h3 class="card-heading">Status Label Descriptions</h3>
             <p>
-            <h3 class-"card-heading">Status Label Descriptions</h3>
               Automatically organize & define status column labels in a list format!<br>
-              <br>
-            Status Label Directory is a powerful tool designed to streamline standard operating procedure (SOP) documentation and enhance workflow management within monday.com. Tailored for teams seeking to optimize their processes and improve productivity, SLD offers a centralized hub where users can organize, document, and track SOPs associated with status labels in their monday.com boards.<br>
-
-
-
-Features and Benefits:<br>
-
-Effortless Organization ✅ - Easily list out labels of all status columns in a board in a separate board view, providing a comprehensive overview of workflow statuses and associated procedures.<br>
-Customizable Notes and Links ✅ - Add detailed notes and links to each status label, enabling users to document specific actions, instructions, or references related to individual labels.<br>
-Training and Onboarding Support ✅ - Facilitate training and onboarding processes by providing new team members with quick access to SOP documentation directly within the monday.com platform.<br>
-Increased Efficiency ✅ - Save time and reduce errors by standardizing SOP documentation and providing clear guidance on workflow procedures, ensuring consistency and accuracy across teams.<br>
-Improved Collaboration ✅ - Foster collaboration and knowledge sharing among team members by centralizing SOP documentation and enabling collaborative editing and feedback.<br>
-Examples of Use Cases:<br>
-
-A marketing team uses SLD to document standard procedures for campaign status updates, including specific tasks, timelines, and resource requirements.<br>
-A project management team utilizes SLD to outline SOPs for project milestones, providing detailed instructions and links to relevant project documents and resources.<br>
-A human resources department leverages SLD to enhance onboarding procedures for new employees.
+              Status Label Directory is a powerful tool designed to streamline standard operating procedure (SOP) documentation and enhance workflow management within monday.com. Tailored for teams seeking to optimize their processes and improve productivity, SLD offers a centralized hub where users can organize, document, and track SOPs associated with status labels in their monday.com boards.<br><br>
+              Features and Benefits:<br>
+              ✅ Effortless Organization - Easily list out labels of all status columns in a board in a separate board view, providing a comprehensive overview of workflow statuses and associated procedures.<br>
+              ✅ Customizable Notes and Links - Add detailed notes and links to each status label, enabling users to document specific actions, instructions, or references related to individual labels.<br>
+              ✅ Training and Onboarding Support - Facilitate training and onboarding processes by providing new team members with quick access to SOP documentation directly within the monday.com platform.<br>
+              ✅ Increased Efficiency - Save time and reduce errors by standardizing SOP documentation and providing clear guidance on workflow procedures, ensuring consistency and accuracy across teams.<br>
+              ✅ Improved Collaboration - Foster collaboration and knowledge sharing among team members by centralizing SOP documentation and enabling collaborative editing and feedback.<br><br>
+              Examples of Use Cases:<br>
+              A marketing team uses SLD to document standard procedures for campaign status updates, including specific tasks, timelines, and resource requirements.<br>
+              A project management team utilizes SLD to outline SOPs for project milestones, providing detailed instructions and links to relevant project documents and resources.<br>
+              A human resources department leverages SLD to enhance onboarding procedures for new employees.
             </p>
           </div>
           <button class="read-more-btn">
             <span class="btn-text">Read More</span>
           </button>
         </div>
-        <!-- Ending of card - 2 of apps section -->
-        <!-- starting of card - 3 of apps section -->
-        <div class="card card-2" id="card-2-image">
+
+        <!-- Starting of card 3 - Update Templates -->
+        <div class="card card-3" id="card-3-image">
           <div class="card-1-div">
-            <div class="card-1-sub-div-1"></div>
+            <div class="card-1-sub-div-1">
+              <img src="images/UTLogo1.png" alt="Update Templates Icon" class="card-image" />
+            </div>
+            <div class="card-1-sub-div-2">
+              <button class="card-1-button-1" data-url="https://auth.monday.com/oauth2/authorize?client_id=fcd66ce926a909a32e80ba5346fd5b22&response_type=install">
+                Install Now
+                <img src="images/Download.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-1-div-2 paragraph-container">
+            <h3 class="card-heading">Update Templates</h3>
+            <p>
+              Create and store templates for frequently made updates in a close-by item view!<br><br>
+              👥 Users can have their own templates, and also share with a collection available to all board members.<br><br>
+              📋 Templates are stored with a "Copy to Clipboard" button right in view, which makes for easy copy and pasting of long, redundant updates.<br><br>
+              📝 Instead of typing them out, copy them over from our item view into the updates section instantly!
+            </p>
+          </div>
+          <button class="read-more-btn">
+            <span class="btn-text">Read More</span>
+          </button>
+        </div>
+
+        <!-- Starting of card 4 - Facebook Embedded -->
+        <div class="card card-4" id="card-4-image">
+          <div class="card-1-div">
+            <div class="card-1-sub-div-1">
+              <img src="images/fbe.png" alt="Facebook Embedded Icon" class="card-image" />
+            </div>
             <div class="card-1-sub-div-2">
               <button class="card-1-button-1" data-url="https://auth.monday.com/oauth2/authorize?client_id=cf3e474d48eee8a16da5552b1837c0c6&response_type=install">
                 Install Now
@@ -291,42 +332,32 @@ A human resources department leverages SLD to enhance onboarding procedures for 
             </div>
           </div>
           <div class="card-1-div-2 paragraph-container">
-            <h3 class-"card-heading">Facebook Embedded</h3>
+            <h3 class="card-heading">Facebook Embedded</h3>
             <p>
-              Embed Facebook posts seamlessly in monday.com!<br>
-              <br>
+              Embed Facebook posts seamlessly in monday.com!<br><br>
               Features and Benefits:<br>
-
-✅Streamlined Integration: Seamlessly integrate Facebook posts into your monday.com dashboards or board views with just a few clicks, eliminating the need for manual copying and pasting. <br>
-
-✅Real-Time Updates: Keep your team informed and up-to-date with the latest Facebook content, ensuring everyone has access to timely information and insights. <br>
-
-✅Customizable Display: Customize the appearance of embedded Facebook posts to match your monday.com workspace, including options for resizing, styling, and placement. <br>
-
-✅Enhanced Collaboration: Foster collaboration and engagement among team members by sharing and discussing Facebook posts directly within the context of your monday.com projects and workflows. <br>
-
-✅Centralized Workspace: Consolidate all relevant information and communication channels in one centralized workspace, reducing the need to switch between multiple platforms and applications. <br>
-
-Examples of Use Cases: <br>
-
-A marketing team uses embedded Facebook posts to monitor customer feedback and engagement metrics directly within their campaign management dashboard. <br>
-
-An event planning team embeds Facebook event pages into their monday.com board view to track RSVPs, event updates, and attendee interactions. <br>
-
-A sales team leverages embedded Facebook posts to stay informed about industry trends, competitor activities, and customer testimonials, facilitating more informed sales conversations. <br>
+              ✅ Streamlined Integration: Seamlessly integrate Facebook posts into your monday.com dashboards or board views with just a few clicks, eliminating the need for manual copying and pasting.<br><br>
+              ✅ Real-Time Updates: Keep your team informed and up-to-date with the latest Facebook content, ensuring everyone has access to timely information and insights.<br><br>
+              ✅ Customizable Display: Customize the appearance of embedded Facebook posts to match your monday.com workspace, including options for resizing, styling, and placement.<br><br>
+              ✅ Enhanced Collaboration: Foster collaboration and engagement among team members by sharing and discussing Facebook posts directly within the context of your monday.com projects and workflows.<br><br>
+              ✅ Centralized Workspace: Consolidate all relevant information and communication channels in one centralized workspace, reducing the need to switch between multiple platforms and applications.<br><br>
+              Examples of Use Cases:<br>
+              A marketing team uses embedded Facebook posts to monitor customer feedback and engagement metrics directly within their campaign management dashboard.<br>
+              An event planning team embeds Facebook event pages into their monday.com board view to track RSVPs, event updates, and attendee interactions.<br>
+              A sales team leverages embedded Facebook posts to stay informed about industry trends, competitor activities, and customer testimonials, facilitating more informed sales conversations.
             </p>
           </div>
           <button class="read-more-btn">
             <span class="btn-text">Read More</span>
           </button>
         </div>
-        <!-- Ending of card - 3 of apps section -->
+        
       </div>
     </div>
-
 `;
   }
 }
+
 class SpecialCourses extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
