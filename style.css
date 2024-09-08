@@ -307,13 +307,54 @@ html {
 }
 
 .brands {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: auto auto; /* Two rows */
+  grid-gap: 1rem; /* Space between the images */
+  justify-items: center; /* Center the images */
   align-items: center;
-  position: relative;
-  width: 100%;
 }
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: auto auto; /* Two rows */
+  grid-gap: 1rem; /* Space between the images */
+  justify-items: center; /* Center the images */
+  align-items: center;
+}
+
+.brand-image-1 {
+  grid-column: 1 / 2; /* First column, top row */
+  grid-row: 1 / 2;
+}
+
+.brand-image-2 {
+  grid-column: 2 / 3; /* Second column, top row */
+  grid-row: 1 / 2;
+}
+
+.brand-image-6 {
+  grid-column: 3 / 4; /* Third column, top row */
+  grid-row: 1 / 2;
+}
+
+.brand-image-3 {
+  grid-column: 1 / 2; /* First column, bottom row */
+  grid-row: 2 / 3;
+}
+
+.brand-image-4 {
+  grid-column: 2 / 3; /* Second column, bottom row */
+  grid-row: 2 / 3;
+}
+
+.brand-image-5 {
+  grid-column: 3 / 4; /* Third column, bottom row */
+  grid-row: 2 / 3;
+}
+
+
 .brands-heading-div {
   width: 100%;
   border: none;
@@ -332,15 +373,17 @@ html {
 .brand-image-2,
 .brand-image-3,
 .brand-image-4,
-.brand-image-5 {
+.brand-image-5,
+.brand-image-6 {
   border: none;
   width: 8rem;
 }
 .brand-images {
-  max-width: 100%; /* Ensure images fit within their grid cells */
-  max-height: 100%; /* Maintain aspect ratio and prevent overflow */
-  object-fit: contain; /* Adjust image to fit within the container */
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
 }
+
 
 /* Special Form */
 .special-form {
@@ -351,7 +394,7 @@ html {
   margin: auto;
   position: relative;
   top: 5rem;
-  padding-top: 8rem;
+  padding-top: 15rem;
 }
 .form {
   height: 100%;
@@ -1334,6 +1377,7 @@ a {
     position: relative;
     height: 20vh;
     top: 3rem;
+  
   }
   .first-button,
   .second-button {
@@ -1733,11 +1777,12 @@ p {
   /* Ensure special-brands has enough margin */
   .product-special-brand {
     margin-bottom: 2rem; /* Add bottom margin */
+
   }
 
   /* Ensure special-form has enough margin */
   .special-form {
-    margin-bottom: 2rem; /* Add bottom margin */
+    margin-bottom: 4rem; /* Add bottom margin */
   }
 
   /* Ensure special-apps has proper padding and margin */

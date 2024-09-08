@@ -66,13 +66,15 @@ class Specialheader extends HTMLElement {
 class Specialbrand extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <div class="brands-heading-div"><h1 class="brands-heading">Trusted by companies all over the world</h1></div>
+    <div class="brands-heading-div"><h1 class="brands-heading">Trusted by organizations across the globe</h1></div>
       <div class="brands">
         <div class="brand-image-1"><img class="brand-images" src="images/image1.png" alt="" /></div>
         <div class="brand-image-2"><img class="brand-images" src="images/image2.png" alt="" /></div>
         <div class="brand-image-3"><img class="brand-images" src="images/image3.png" alt="" /></div>
         <div class="brand-image-4"><img class="brand-images" src="images/image4.png" alt="" /></div>
         <div class="brand-image-5"><img class="brand-images" src="images/image5.png" alt="" /></div>
+        <div class="brand-image-6"><img class="brand-images" src="images/image6.png" alt="" /></div>
+        
       </div>`;
   }
 }
@@ -399,12 +401,13 @@ By the end of this course, you'll have the knowledge and confidence to work, bui
             <div class="card-1-sub-div-2">
               <button class="card-1-button-1" data-url="https://your-install-url.com">
                 Coming soon!
-                <img src="imges/Download.png" alt="" />
+               <!-- <img src="imges/Download.png" alt="" /> -->
               </button>
             </div>
           </div>
+          <h3 class-"card-heading">monday Sales CRM for Beginners: Taught by a Certified Expert</h3>
           <div class="card-1-div-2 paragraph-container">
-            <p> monday.com Sales CRM for Beginners: Taught by a Certified Expert </p>
+            <p> monday.com Sales CRM for Beginners: Taught by a Certified Expert. Coming soon to Udemy! </p>
           </div>
           <button class="read-more-btn">
             <span class="btn-text">Read More</span>
