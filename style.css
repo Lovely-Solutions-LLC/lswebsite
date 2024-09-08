@@ -1743,7 +1743,7 @@ p {
   /* Ensure special-apps has proper padding and margin */
   .special-apps {
     margin-top: 2rem; /* Add top margin to ensure space */
-    padding-bottom: 70rem; /* Add padding at the bottom */
+    padding-bottom: 80rem; /* Add padding at the bottom */
   }
 }
 
