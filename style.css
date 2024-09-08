@@ -1705,23 +1705,30 @@ p {
   opacity: 0.7; /* Make it slightly transparent */
 }
 
-/* Show chevrons only on mobile screens */
+/* Only show chevrons for the Apps section */
 @media (max-width: 768px) {
-  .mobile-chevron-indicator {
+  .app-section .mobile-chevron-indicator {
     display: block;
   }
-  
+
   .left-chevron-indicator {
     left: 10px;
   }
-  
+
   .right-chevron-indicator {
     right: 10px;
   }
-  
+
   .app-section {
     position: relative;
   }
 }
+
+/* Ensure chevrons don't appear in Courses and Others sections */
+.special-courses .mobile-chevron-indicator,
+.special-others .mobile-chevron-indicator {
+  display: none !important;
+}
+
 
 
