@@ -1689,6 +1689,39 @@ p {
 
 .special-others .card-container {
   position: relative;
-  left: -45px; /* Move the card 20px to the left */
+  left: -45px; /* Move the card 20px to the left. Delete when more cards are added */
 }
+
+/* Initially hide the visual chevron indicators */
+.mobile-chevron-indicator {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 48px;
+  z-index: 1000;
+  color: #888; /* Chevron color */
+  pointer-events: none; /* Ensure the arrows don't interfere with swipe or tap events */
+  opacity: 0.7; /* Make it slightly transparent */
+}
+
+/* Show chevrons only on mobile screens */
+@media (max-width: 768px) {
+  .mobile-chevron-indicator {
+    display: block;
+  }
+  
+  .left-chevron-indicator {
+    left: 10px;
+  }
+  
+  .right-chevron-indicator {
+    right: 10px;
+  }
+  
+  .app-section {
+    position: relative;
+  }
+}
+
 
