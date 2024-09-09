@@ -1818,12 +1818,6 @@ html, body {
   overflow-x: hidden;
 }
 
-img, .brand-images, .container, .content {
-  max-width: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
 
 
 
