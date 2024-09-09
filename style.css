@@ -1819,7 +1819,42 @@ html, body {
 }
 
 
+/* Specific Mobile Fixes */
+@media (max-width: 768px) {
+  /* Fix for brand logos being cut off */
+  .brands {
+    grid-template-columns: 1fr 1fr; /* Adjust to fit better */
+    grid-template-rows: auto auto;
+    padding-bottom: 4rem; /* Ensure space at the bottom */
+  }
 
+  /* Fix for elements cutting off on home page */
+  .first-container {
+    overflow: hidden;
+  }
+
+  /* Ensuring no horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Fix Read More Button expanding text into brands section */
+  .paragraph-container {
+    max-height: 10rem;
+  }
+
+  .paragraph-container.expanded {
+    max-height: 20rem; /* Adjusted to ensure it doesn't overlap */
+  }
+
+  /* Centering elements */
+  .special-brands, .card-container, .card-main-container {
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 
 
