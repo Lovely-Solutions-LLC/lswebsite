@@ -313,6 +313,7 @@ html {
   grid-gap: 1rem; /* Space between the images */
   justify-items: center; /* Center the images */
   align-items: center;
+  overflow:visible;
 }
 
 .brands {
