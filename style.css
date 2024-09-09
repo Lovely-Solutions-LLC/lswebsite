@@ -942,7 +942,7 @@ a {
 /* Paragraph Container */
 .paragraph-container {
   max-height: 13em; /* Initially show only the first part of the paragraph */
-  overflow: hidden;
+  overflow-y: hidden;
   transition: max-height 0.3s ease-in-out;
   padding-bottom: 40px; /* Ensure there's space for the button */
   position: relative;
@@ -1791,6 +1791,27 @@ p {
     padding-bottom: 80rem; /* Add padding at the bottom */
   }
 }
+
+
+
+
+
+@media (max-width: 768px) {
+  .paragraph-container {
+    max-height: 8rem; /* You can tweak this height for mobile screens */
+  }
+
+  .paragraph-container.expanded {
+    max-height: none; /* On mobile, ensure the expansion works */
+  }
+}
+
+@media (max-width: 768px) {
+  .special-brand {
+    margin-top: 3rem; /* Ensure good spacing on mobile */
+  }
+}
+
 
 
 

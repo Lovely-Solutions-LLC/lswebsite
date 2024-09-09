@@ -213,50 +213,48 @@ class SpecialApps extends HTMLElement {
     <div class="card-main-container">
       <div class="card-container">
 
-        <!-- Starting of card 1 - Ultimate Team Productivity Tracker -->
-        <div class="card card-1" id="card-1-image">
-          <div class="card-1-div">
-            <div class="card-1-sub-div-1">
-              <img src="images/UTPT2.png" alt="Ultimate Team Productivity Tracker Icon" class="card-image" />
-            </div>
-            <div class="card-1-sub-div-2">
-              <button class="card-1-button-1" data-url="your-app-link">
-                Coming Soon!
-              
-                <!-- Uncomment this when its time <img src="images/Download.png" alt="Download Icon" /> -->
-    
-              </button>
-            </div>
-          </div>
-          <div class="card-1-div-2 paragraph-container">
-            <h3 class="card-heading">Ultimate Team Productivity Tracker</h3>
-            <p>
-              Ultimate Team Productivity Tracker is THE solution for teams using monday.com to track and optimize their activities across all boards with one simple interface.<br><br>
-              Simple & Practical Key Features. No fluff, just pure value🚀 <br><br>
-              ✅ Visualize team activity trends throughout the day/week/month.<br>
-              -An operations manager uses daily trend charts to keep a pulse on team activity:<br>
-              -"We're seeing a big dip in activity on Friday afternoons. Maybe we should start doing Friday half-days."<br>
-              -"The team is most active at the start of the week. Let's schedule meetings around those productive times."<br><br>
-              ✅ Keep a pulse on team activity with a glance at the hub.<br>
-              -Last activity by user: "Everyone has had activity in the last 10 minutes. All hands are on deck!"<br>
-              -"How busy are we today? Wow, 50% more activity today than yesterday. Maybe tomorrow is better for that meeting."<br><br>
-              ✅ Spot Workload Imbalances & Bottlenecks Instantly.<br>
-              -A sales manager sees that one rep has 4x the activity of others: "Are they getting all the leads? Or maybe it's time for a raise?"<br>
-              -A project manager sees one project board getting all the attention: "Is that board the priority right now?"<br>
-              -"John has been updating the same tasks all day—maybe he needs help."<br><br>
-              ✅ Most Common Activities in Your Workflow.<br>
-              -"30% of team activity this week is on creating items in the sprint board. Let's try to automate this step." <br>
-              -"Updating column values on the Approvals board makes up 45% of our activity. Should we simplify that process?"<br><br>
-              ✅ Monitor Task Ownership & Accountability.<br>
-              -"I'm seeing that Mark hasn't updated his tasks in 3 days. Let's see if he's stuck."<br>
-              -"David is the only one updating campaign tasks. What is the rest of the team working on?"<br><br>
-              Get started today with the Ultimate Team Productivity Tracker. No fluff—just the insights you need!
-            </p>
-          </div>
-          <button class="read-more-btn">
-            <span class="btn-text">Read More</span>
-          </button>
-        </div>
+        <!-- Card 1 - Ultimate Team Productivity Tracker -->
+<div class="card card-1" id="card-1-image">
+  <div class="card-1-div">
+    <div class="card-1-sub-div-1">
+      <img src="images/UTPT2.png" alt="Ultimate Team Productivity Tracker Icon" class="card-image" />
+    </div>
+    <div class="card-1-sub-div-2">
+      <button class="card-1-button-1" data-url="your-app-link">
+        Coming Soon!
+      </button>
+    </div>
+  </div>
+  <div class="card-1-div-2 paragraph-container">
+    <h3 class="card-heading">Ultimate Team Productivity Tracker</h3>
+    <p>
+      Ultimate Team Productivity Tracker is THE solution for teams using monday.com to track and optimize their activities across all boards with one simple interface.<br><br>
+      Simple & Practical Key Features. No fluff, just pure value🚀 <br><br>
+      ✅ Visualize team activity trends throughout the day/week/month.<br>
+      -An operations manager uses daily trend charts to keep a pulse on team activity:<br>
+      -"We're seeing a big dip in activity on Friday afternoons. Maybe we should start doing Friday half-days."<br>
+      -"The team is most active at the start of the week. Let's schedule meetings around those productive times."<br><br>
+      ✅ Keep a pulse on team activity with a glance at the hub.<br>
+      -Last activity by user: "Everyone has had activity in the last 10 minutes. All hands are on deck!"<br>
+      -"How busy are we today? Wow, 50% more activity today than yesterday. Maybe tomorrow is better for that meeting."<br><br>
+      ✅ Spot Workload Imbalances & Bottlenecks Instantly.<br>
+      -A sales manager sees that one rep has 4x the activity of others: "Are they getting all the leads? Or maybe it's time for a raise?"<br>
+      -A project manager sees one project board getting all the attention: "Is that board the priority right now?"<br>
+      -"John has been updating the same tasks all day—maybe he needs help."<br><br>
+      ✅ Most Common Activities in Your Workflow.<br>
+      -"30% of team activity this week is on creating items in the sprint board. Let's try to automate this step." <br>
+      -"Updating column values on the Approvals board makes up 45% of our activity. Should we simplify that process?"<br><br>
+      ✅ Monitor Task Ownership & Accountability.<br>
+      -"I'm seeing that Mark hasn't updated his tasks in 3 days. Let's see if he's stuck."<br>
+      -"David is the only one updating campaign tasks. What is the rest of the team working on?"<br><br>
+      Get started today with the Ultimate Team Productivity Tracker. No fluff—just the insights you need!
+    </p>
+  </div>
+  <button class="read-more-btn">
+    <span class="btn-text">Read More</span>
+  </button>
+</div>
+
 
         <!-- Starting of card 2 - Status Label Descriptions -->
         <div class="card card-2" id="card-2-image">
@@ -563,31 +561,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   const readMoreButtons = document.querySelectorAll(".read-more-btn");
+
   readMoreButtons.forEach((button) => {
-    console.log(button); // Log the button element to ensure it's being selected
-
     button.addEventListener("click", () => {
-      const card = button.closest(".card");
-      const paragraphContainer = card.querySelector(".paragraph-container");
-      const btnText = button.querySelector(".btn-text");
+      const card = button.closest(".card"); // Get the closest card element
+      const paragraphContainer = card.querySelector(".paragraph-container"); // Target the correct paragraph container
+      const btnText = button.querySelector(".btn-text"); // Get the button text element
 
-      console.log(btnText); // Log the btnText to ensure it's being selected
+      // Ensure elements exist to prevent errors
+      if (!btnText || !paragraphContainer) return;
 
-      if (btnText === null) {
-        console.error("btnText is null for this button:", button);
-        return;
-      }
-
+      // Check if the paragraph container is expanded
       if (paragraphContainer.classList.contains("expanded")) {
+        // Collapse: Remove expanded class and reset scroll
         paragraphContainer.classList.remove("expanded");
-        btnText.textContent = "Read More";
+        paragraphContainer.scrollTop = 0; // Reset scroll position
+        btnText.textContent = "Read More"; // Change button text
+
+        // Scroll back to the card's top position smoothly
+        card.scrollIntoView({ behavior: "smooth" });
       } else {
+        // Expand: Add expanded class
         paragraphContainer.classList.add("expanded");
-        btnText.textContent = "Show Less";
+        btnText.textContent = "Show Less"; // Change button text
+
+        // Scroll the card into view (for long content)
+        card.scrollIntoView({ behavior: "smooth" });
       }
     });
   });
 });
+
+
+
+
 // script.js
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerButton = document.querySelector(".hamburger-button");
