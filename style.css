@@ -313,7 +313,7 @@ html {
   grid-gap: 1rem; /* Space between the images */
   justify-items: center; /* Center the images */
   align-items: center;
-  overflow:visible;
+  overflow: visible;
 }
 
 .brands {
@@ -355,7 +355,6 @@ html {
   grid-row: 2 / 3;
 }
 
-
 .brands-heading-div {
   width: 100%;
   border: none;
@@ -383,7 +382,6 @@ html {
   height: auto; /* Maintain aspect ratio */
   object-fit: contain;
 }
-
 
 /* Special Form */
 .special-form {
@@ -800,9 +798,6 @@ a {
   }
 }
 
-
-
-
 .card-container-courses {
   display: flex;
   overflow-x: scroll; /* Space between cards */
@@ -838,7 +833,6 @@ a {
   padding-left: 20px;
   margin: auto;
 }
-
 
 .card h2 {
   margin-top: 0;
@@ -1134,7 +1128,7 @@ a {
     height: 30vh;
   }
   .first-container {
-    height: 90rem;
+    height: 104rem;
   }
   .simple {
     font-size: 2.2rem;
@@ -1201,7 +1195,7 @@ a {
     gap: 5rem;
   }
   .special-form {
-    top: 10rem;
+    top: 0rem;
   }
   .special-footer {
     top: 10rem;
@@ -1248,7 +1242,16 @@ a {
     font-size: 3.5rem;
   }
   .first-container {
-    height: 70rem;
+    height: 90rem;
+  }
+  .special-form{
+    height: 100%;
+    min-height: 40rem;
+    top: 0px;
+    padding-top: 0;
+  }
+  .product-special-brand{
+    margin-bottom: 15rem;
   }
   .form-submit-button {
     margin-top: 2vw;
@@ -1279,6 +1282,9 @@ a {
 }
 /* laptop */
 @media (max-width: 1024px) {
+  .first-container{
+    height: 80rem;
+  }
   .navbar-buttons-home {
     width: 28.625rem;
     height: 5rem;
@@ -1296,6 +1302,9 @@ a {
   }
   .special-form {
     width: 60rem;
+    padding-top: 0;
+    height: 100%;
+    min-height: 60vh;
   }
   .special-apps,
   .special-others {
@@ -1305,12 +1314,15 @@ a {
   }
   .special-footer,
   .special-form {
-    top: 8rem;
+    top: 10vh;
   }
   .product-special-brand,
   .special-courses {
     gap: 70px;
     padding: 3rem;
+  }
+  .product-special-brand{
+    margin-bottom: 10rem;
   }
   .first-form-image {
     width: 16rem;
@@ -1349,7 +1361,7 @@ a {
     display: flex;
   }
   .first-container {
-    height: 50rem;
+    height: 65rem;
   }
   .first-sub-container {
     flex-direction: column;
@@ -1377,7 +1389,6 @@ a {
     position: relative;
     height: 20vh;
     top: 3rem;
-  
   }
   .first-button,
   .second-button {
@@ -1386,7 +1397,7 @@ a {
     width: 9.25rem;
   }
   .special-brands {
-    top: 9rem;
+    top: 2rem;
   }
   .h1,
   h1 {
@@ -1396,7 +1407,8 @@ a {
   .brand-image-2,
   .brand-image-3,
   .brand-image-4,
-  .brand-image-5 {
+  .brand-image-5,
+  .brand-image-6 {
     width: 8rem;
   }
   .card-container {
@@ -1418,6 +1430,7 @@ a {
   .special-form {
     width: 90%;
     height: 30.5rem;
+    top: 0;
   }
   .form-submit-button > button {
     font-size: 1rem;
@@ -1475,9 +1488,7 @@ a {
   .material-icons {
     cursor: pointer;
   }
-  .card-main-container {
-    height: 32rem;
-  }
+  
   .courses-card-container {
     display: flex;
     justify-content: center;
@@ -1486,6 +1497,7 @@ a {
   }
   .special-footer {
     width: 100%;
+    top: 0;
   }
   .footer-sub-first,
   .footer-sub-second {
@@ -1513,7 +1525,7 @@ a {
     top: 0;
   }
   .footer-button {
-    width: 5vw;
+    width: 6vw;
   }
   .footer-first-info {
     top: 2rem;
@@ -1535,16 +1547,24 @@ a {
     align-items: flex-start;
   }
   .side-navbar-heading {
-    font-size: 1rem;
+    font-size: 1.9rem;
   }
   .sidebar {
     margin-left: 0;
   }
+  .links{
+    font-size: 1.9rem;
+  }
+  .material-icons{
+    width: 14vw;
+  }
+  .side-navbar-para > p {
+    font-size: 1rem;}
   .nav-2 {
     display: none;
   }
   .first-container {
-    height: 65rem;
+    height: 70rem;
   }
   .first-sub-container {
     flex-direction: column;
@@ -1581,23 +1601,39 @@ a {
   }
   .special-brands {
     top: 0;
+    gap: 10vw;
+  }
+  .brand-image-1,
+  .brand-image-2,
+  .brand-image-3,
+  .brand-image-4,
+  .brand-image-5,
+  .brand-image-6{
+    width: 5rem;
   }
   .rectangle {
-    width: 18rem;
+    width: 22rem;
   }
   .card-container {
     margin-left: 2rem;
     padding: 0 10px;
   }
+  
   .card-main-container {
-    height: 30rem;
+    height: 100%;
   }
   .second-page-current-page {
     width: 7.5rem;
   }
   .product-special-brand {
     height: 24rem;
+    padding: 0;
+    padding-left: 2rem;
+    padding-top: 2rem;
   }
+  .product-special-brand, .special-courses {
+    padding: 2rem;
+}
   .brands {
     height: 10rem;
   }
@@ -1606,12 +1642,16 @@ a {
     flex-direction: column;
   }
   .special-form {
-    height: 65.5rem;
-    top: 9rem;
+    height: 58.5rem;
+    padding-top: 0;
+    top: 10vh;
   }
   .actual-form {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .first-form-image {
+    width: 14rem;
   }
   .form-submit-button > button {
     font-size: 1.2rem;
@@ -1671,7 +1711,7 @@ a {
   }
   .footer-third-div {
     height: 100%;
-    width: 25rem;
+    width: 24rem;
   }
   .footer-last-button {
     display: none;
@@ -1698,6 +1738,9 @@ a {
   .first-form-image {
     top: 0;
   }
+  .simple-save-lovely{
+    margin-left: -110px;
+  }
 }
 
 /* Legal Section */
@@ -1722,8 +1765,10 @@ p {
 }
 
 /* Ensure consistent font family and size for all card text */
-.card p, .card h3, .card h4 {
-  font-family: 'Nunito Sans', sans-serif; /* Replace with the desired font family */
+.card p,
+.card h3,
+.card h4 {
+  font-family: "Nunito Sans", sans-serif; /* Replace with the desired font family */
   font-size: 16px; /* Adjust the size to match other cards */
   line-height: 1.5; /* Set consistent line height */
   color: #000; /* Set consistent text color */
@@ -1731,7 +1776,8 @@ p {
 }
 
 /* Optional: Adjust specific elements like headings */
-.card h3, .card h4 {
+.card h3,
+.card h4 {
   font-weight: bolder; /* Ensure headings are bold */
   font-size: 18px; /* Adjust heading size */
 }
@@ -1776,25 +1822,18 @@ p {
 @media (max-width: 768px) {
   /* Ensure special-brands has enough margin */
   .product-special-brand {
-    margin-bottom: 2rem; /* Add bottom margin */
-
+    margin-bottom: 10rem; /* Add bottom margin */
   }
 
   /* Ensure special-form has enough margin */
   .special-form {
     margin-bottom: 4rem; /* Add bottom margin */
+    padding-top: 0;
   }
 
   /* Ensure special-apps has proper padding and margin */
-  .special-apps {
-    margin-top: 2rem; /* Add top margin to ensure space */
-    padding-bottom: 80rem; /* Add padding at the bottom */
-  }
+  
 }
-
-
-
-
 
 @media (max-width: 768px) {
   .paragraph-container {
@@ -1812,19 +1851,18 @@ p {
   }
 }
 
-html, body {
+html,
+body {
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
-
 
 /* Specific Mobile Fixes */
 @media (max-width: 768px) {
   /* Fix for brand logos being cut off */
   .brands {
-    grid-template-columns: 1fr 1fr; /* Adjust to fit better */
+    grid-template-columns: 1fr 1fr 1fr; /* Adjust to fit better */
     grid-template-rows: auto auto;
-    padding-bottom: 4rem; /* Ensure space at the bottom */
   }
 
   /* Fix for elements cutting off on home page */
@@ -1847,15 +1885,12 @@ html, body {
   }
 
   /* Centering elements */
-  .special-brands, .card-container, .card-main-container {
+  .special-brands,
+  .card-container,
+  .card-main-container {
     margin: auto;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-
-
-
-
-

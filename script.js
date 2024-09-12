@@ -509,6 +509,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const scrollToTopButton1 = document.getElementById("scrollToTopButton1");
   const scrollToTopButton2 = document.getElementById("scrollToTopButton2");
 
+  // Scroll to top button 1 functionality
   if (scrollToTopButton1) {
     scrollToTopButton1.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -517,17 +518,23 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("scrollToTopButton1 not found");
   }
 
+  // Scroll to top button 2 functionality
   if (scrollToTopButton2) {
+    console.log("scrollToTopButton2 found"); // Debugging: check if the button exists
     scrollToTopButton2.addEventListener("click", function () {
+      console.log("scrollToTopButton2 clicked"); // Debugging: check if the button is clicked
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   } else {
     console.error("scrollToTopButton2 not found");
   }
 });
+
+// Scroll to specific form functionality
 function scrollToForm() {
   document.getElementById("actual-form").scrollIntoView({ behavior: "smooth" });
 }
+
 
 document.querySelector(".read-more-btn").addEventListener("click", function () {
   const paragraphContainer = document.querySelector(".paragraph-container");
