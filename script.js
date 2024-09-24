@@ -133,7 +133,7 @@ class Specialform extends HTMLElement {
       <p>
         Have an idea for something in the monday.com realm? <br>
         <br>
-        We pride ourselves on hearing everyone out, and giving credit where it's due.<br>
+        We'll hear anyone out, and give credit where it's due!<br>
         <br>
         Let's talk!
       </p>
