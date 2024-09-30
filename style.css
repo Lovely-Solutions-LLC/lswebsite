@@ -824,7 +824,7 @@ a {
 .card {
   width: 100%;
   max-width: 485px;
-  height: auto; /* Allow height to be flexible */
+  height: 500px; /* Allow height to be flexible */
   background-color: white;
   border: 3px solid #fff5ee;
   border-radius: 8px;

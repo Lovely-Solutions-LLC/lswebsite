@@ -397,15 +397,22 @@ By the end of this course, you'll have the knowledge and confidence to work, bui
           <div class="card-1-div">
             <div class="courses-1-sub-div-1"></div>
             <div class="card-1-sub-div-2">
-              <button class="card-1-button-1" data-url="https://your-install-url.com">
-                Coming soon!
-               <!-- <img src="imges/Download.png" alt="" /> -->
+              <button class="card-1-button-1" data-url="https://www.udemy.com/course/monday-sales-crm/?referralCode=9ECA1BC37F26D2093091">
+                Enroll on
+                  <img src="images/us2.png" alt="" />
               </button>
             </div>
           </div>
           <h3 class-"card-heading">monday Sales CRM for Beginners: Taught by a Certified Expert</h3>
           <div class="card-1-div-2 paragraph-container">
-            <p> monday.com Sales CRM for Beginners: Taught by a Certified Expert. Coming soon to Udemy! </p>
+            <p> 
+            Are you new to monday CRM and eager to learn how to manage your entire sales cycle using this powerful platform? Whether you're a solo entrepreneur, a sales manager, or part of a growing team, this course is designed to help you master the basics of monday CRM and optimize your sales processes. <br> <br>
+
+In this comprehensive course, you'll learn how to navigate monday CRM and unlock all of its powerful features. We’ll explore how to manage your leads, track your deal flow, and create customizable dashboards that give you real-time visibility into your sales performance. You’ll also learn how to set up automations that keep your sales cycle moving smoothly without manual input, so nothing falls through the cracks. <br> <br>
+
+In addition to the basics, I’ll share some extra features to help you take your CRM to the next level, including email integrations, customized sales stages, and how to create forms to capture leads from your website. <br> <br>
+
+By the end of this course, you'll be able to confidently manage your sales pipeline, optimize your team’s productivity, and harness the full power of monday CRM. Join me, and let's get started on your journey to mastering the sales process with monday CRM! </p>
           </div>
           <button class="read-more-btn">
             <span class="btn-text">Read More</span>
