@@ -213,7 +213,7 @@ class SpecialApps extends HTMLElement {
     <div class="card-main-container">
       <div class="card-container">
 
-        <!-- Card 1 - Ultimate Team Productivity Tracker -->
+        <!-- Card 1 - Ultimate Team Productivity Tool -->
 <div class="card card-1" id="card-1-image">
   <div class="card-1-div">
     <div class="card-1-sub-div-1">
@@ -226,9 +226,9 @@ class SpecialApps extends HTMLElement {
     </div>
   </div>
   <div class="card-1-div-2 paragraph-container">
-    <h3 class="card-heading">Ultimate Team Productivity Tracker</h3>
+    <h3 class="card-heading">Ultimate Team Productivity Tool</h3>
     <p>
-      Ultimate Team Productivity Tracker is THE solution for teams using monday.com to track and optimize their activities across all boards with one simple interface.<br><br>
+      Ultimate Team Productivity Tool is THE solution for teams using monday.com to track and optimize their activities across all boards with one simple interface.<br><br>
       Simple & Practical Key Features. No fluff, just pure value🚀 <br><br>
       ✅ Visualize team activity trends throughout the day/week/month.<br>
       -An operations manager uses daily trend charts to keep a pulse on team activity:<br>
