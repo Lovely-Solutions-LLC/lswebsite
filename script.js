@@ -220,8 +220,9 @@ class SpecialApps extends HTMLElement {
       <img src="images/UTPT2.png" alt="Ultimate Team Productivity Tracker Icon" class="card-image" />
     </div>
     <div class="card-1-sub-div-2">
-      <button class="card-1-button-1" data-url="your-app-link">
-        Coming Soon!
+      <button class="card-1-button-1" data-url="https://auth.monday.com/oauth2/authorize?client_id=a3f28ab7dd101622eae66b04167d3bb1&response_type=install">
+        Install Now
+            <img src="images/Download.png" alt="" />
       </button>
     </div>
   </div>
