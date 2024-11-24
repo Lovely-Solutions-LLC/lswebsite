@@ -227,9 +227,9 @@ class SpecialApps extends HTMLElement {
     </div>
   </div>
   <div class="card-1-div-2 paragraph-container">
-    <h3 class="card-heading">Ultimate Team Productivity Tool</h3>
+    <h3 class="card-heading">Master Activity Logs</h3>
     <p>
-      Ultimate Team Productivity Tool is THE solution for teams using monday.com to track and optimize their activities across all boards with one simple interface.<br><br>
+      Master Activity Logs is THE solution for teams using monday.com to track and optimize their activities across all boards with one simple interface.<br><br>
       Simple & Practical Key Features. No fluff, just pure value🚀 <br><br>
       ✅ Visualize team activity trends throughout the day/week/month.<br>
       -An operations manager uses daily trend charts to keep a pulse on team activity:<br>
@@ -248,7 +248,7 @@ class SpecialApps extends HTMLElement {
       ✅ Monitor Task Ownership & Accountability.<br>
       -"I'm seeing that Mark hasn't updated his tasks in 3 days. Let's see if he's stuck."<br>
       -"David is the only one updating campaign tasks. What is the rest of the team working on?"<br><br>
-      Get started today with the Ultimate Team Productivity Tracker. No fluff—just the insights you need!
+      Get started today with Master Activity Logs. No fluff—just the insights you need!
     </p>
   </div>
   <button class="read-more-btn">
