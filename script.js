@@ -409,11 +409,11 @@ By the end of this course, you'll have the knowledge and confidence to work, bui
             <p> 
             Are you new to monday CRM and eager to learn how to manage your entire sales cycle using this powerful platform? Whether you're a solo entrepreneur, a sales manager, or part of a growing team, this course is designed to help you master the basics of monday CRM and optimize your sales processes. <br> <br>
 
-In this comprehensive course, you'll learn how to navigate monday CRM and unlock all of its powerful features. We’ll explore how to manage your leads, track your deal flow, and create customizable dashboards that give you real-time visibility into your sales performance. You’ll also learn how to set up automations that keep your sales cycle moving smoothly without manual input, so nothing falls through the cracks. <br> <br>
+In this comprehensive course, you'll learn how to navigate monday CRM and unlock all of its powerful features. We'll explore how to manage your leads, track your deal flow, and create customizable dashboards that give you real-time visibility into your sales performance. You'll also learn how to set up automations that keep your sales cycle moving smoothly without manual input, so nothing falls through the cracks. <br> <br>
 
-In addition to the basics, I’ll share some extra features to help you take your CRM to the next level, including email integrations, customized sales stages, and how to create forms to capture leads from your website. <br> <br>
+In addition to the basics, I'll share some extra features to help you take your CRM to the next level, including email integrations, customized sales stages, and how to create forms to capture leads from your website. <br> <br>
 
-By the end of this course, you'll be able to confidently manage your sales pipeline, optimize your team’s productivity, and harness the full power of monday CRM. Join me, and let's get started on your journey to mastering the sales process with monday CRM! </p>
+By the end of this course, you'll be able to confidently manage your sales pipeline, optimize your team's productivity, and harness the full power of monday CRM. Join me, and let's get started on your journey to mastering the sales process with monday CRM! </p>
           </div>
           <button class="read-more-btn">
             <span class="btn-text">Read More</span>
@@ -806,5 +806,133 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("URL not found for this button:", button);
       }
     });
+  });
+});
+
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// Scroll to top button
+const scrollToTopButton = document.getElementById('scrollToTop');
+if (scrollToTopButton) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollToTopButton.style.display = 'flex';
+      scrollToTopButton.style.opacity = '1';
+    } else {
+      scrollToTopButton.style.opacity = '0';
+      setTimeout(() => {
+        if (window.scrollY <= 300) {
+          scrollToTopButton.style.display = 'none';
+        }
+      }, 300);
+    }
+  });
+
+  scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+// Reveal animations on scroll
+const revealElements = document.querySelectorAll('.reveal');
+
+function reveal() {
+  revealElements.forEach(element => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      element.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', reveal);
+window.addEventListener('load', reveal);
+
+// Form submission handling
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const submitButton = this.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
+
+    try {
+      const formData = new FormData(this);
+      const response = await fetch(this.action, {
+        method: 'POST',
+        body: formData
+      });
+
+      if (response.ok) {
+        // Show success message
+        const successMessage = document.createElement('div');
+        successMessage.className = 'alert alert-success mt-3';
+        successMessage.textContent = 'Message sent successfully!';
+        this.appendChild(successMessage);
+        
+        // Reset form
+        this.reset();
+        
+        // Remove success message after 5 seconds
+        setTimeout(() => {
+          successMessage.remove();
+        }, 5000);
+      } else {
+        throw new Error('Network response was not ok');
+      }
+    } catch (error) {
+      // Show error message
+      const errorMessage = document.createElement('div');
+      errorMessage.className = 'alert alert-danger mt-3';
+      errorMessage.textContent = 'Failed to send message. Please try again.';
+      this.appendChild(errorMessage);
+      
+      // Remove error message after 5 seconds
+      setTimeout(() => {
+        errorMessage.remove();
+      }, 5000);
+    } finally {
+      submitButton.textContent = originalText;
+      submitButton.disabled = false;
+    }
+  });
+}
+
+// Add reveal class to elements that should animate on scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const elementsToReveal = document.querySelectorAll('.app-card, .section-title, .contact-form, .contact-image');
+  elementsToReveal.forEach(element => {
+    element.classList.add('reveal');
   });
 });
